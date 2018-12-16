@@ -1,7 +1,7 @@
 {
-  "name": "Genius Cours",
+  "name": "genius-cours",
   "version": "1.0.0",
-  "description": "\u0016genius cours\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[P\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C Multipurpose HTML Template",
+  "description": "\u0016genius-cours\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[P\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C Multipurpose HTML Template",
   "main": "index.js",
   "scripts": {
     "start": "gulp"
