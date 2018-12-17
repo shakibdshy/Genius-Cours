@@ -1,5 +1,7 @@
 /* Header Area Start */
 .header-area{
+    position: relative;
+    z-index: 1;
     margin-top: 45px;
     .logo-area{
         img{

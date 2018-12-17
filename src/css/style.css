@@ -12,6 +12,8 @@ body {
 
 /* Header Area Start */
 .header-area {
+  position: relative;
+  z-index: 1;
   margin-top: 45px; }
   .header-area .logo-area img {
     width: 100%; }
@@ -69,3 +71,9 @@ body {
         margin-right: 10px; }
         .header-area .cart-search ul li a {
           color: #fff; }
+
+/*==================== Slider Area ===================*/
+.slider-area {
+  position: absolute;
+  top: 0;
+  width: 100%; }
