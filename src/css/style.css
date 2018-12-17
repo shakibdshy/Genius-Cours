@@ -12,8 +12,7 @@ body {
 
 /* Header Area Start */
 .header-area {
-  margin-top: 45px;
-  background: #000; }
+  margin-top: 45px; }
   .header-area .logo-area img {
     width: 100%; }
   .header-area .lang {
