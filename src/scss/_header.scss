@@ -24,21 +24,70 @@
                 li{
                     list-style: none;
                     display: inline-block;
-                    padding: 7px 15px;
                     transition: 3s;
+                    padding: 7px 15px;
                     border-radius: 5px;
+                    position: relative;
                     a{
                         color: #fff;
                         text-decoration: none;
                         font-weight: 700;
                         font-size: 15px;
-                        text-transform: uppercase;
+                        text-transform: uppercase;                        
+                    }
+                    ul.sub-menu{
+                        position: absolute;
+                        width: 300px;
+                        background: #fff;
+                        padding: 30px;
+                        left: -100px;
+                        top: 35px;
+                        border-radius: 4px;
+                        opacity: 0;
+                        visibility: hidden;
+                        transform: scaleY(0);
+                        display: table;
+                        transform-origin: center top 0;
                         transition: .3s;
+                        &::before{
+                            position: absolute;
+                            content: '';
+                            border-left: 10px solid transparent;
+                            border-right: 10px solid transparent;
+                            border-top: 10px solid #01a6fd;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            margin: 0 auto;
+                            width: 20px;
+                        }
+                        li{
+                            display: block;
+                            text-align: left;
+                            border-bottom: 1px solid #eeeeee;
+                            &:last-child{
+                                border: none;
+                            }
+                            &:hover{
+                                background: transparent;
+                            }
+                            a{
+                                color: #333333;
+                                transition: .3s;
+                                &:hover{
+                                    color: $theme-color;
+                                }
+                            }
+                        }
                     }
                     &:hover {
                         @extend %theme-gradient;
                         background-size: 200% auto;
-                        border-radius: 5px;
+                        ul.sub-menu{
+                            opacity: 1;
+                            visibility: visible;
+                            transform: scaleY(1);
+                        }
                     }
                 }
             }

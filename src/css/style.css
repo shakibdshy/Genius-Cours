@@ -31,23 +31,72 @@ body {
       .header-area .menu-area nav ul li {
         list-style: none;
         display: inline-block;
-        padding: 7px 15px;
         -webkit-transition: 3s;
         -o-transition: 3s;
         transition: 3s;
-        border-radius: 5px; }
+        padding: 7px 15px;
+        border-radius: 5px;
+        position: relative; }
         .header-area .menu-area nav ul li a {
           color: #fff;
           text-decoration: none;
           font-weight: 700;
           font-size: 15px;
-          text-transform: uppercase;
+          text-transform: uppercase; }
+        .header-area .menu-area nav ul li ul.sub-menu {
+          position: absolute;
+          width: 300px;
+          background: #fff;
+          padding: 30px;
+          left: -100px;
+          top: 35px;
+          border-radius: 4px;
+          opacity: 0;
+          visibility: hidden;
+          -webkit-transform: scaleY(0);
+          -ms-transform: scaleY(0);
+          transform: scaleY(0);
+          display: table;
+          -webkit-transform-origin: center top 0;
+          -ms-transform-origin: center top 0;
+          transform-origin: center top 0;
           -webkit-transition: .3s;
           -o-transition: .3s;
           transition: .3s; }
+          .header-area .menu-area nav ul li ul.sub-menu::before {
+            position: absolute;
+            content: '';
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 10px solid #01a6fd;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            width: 20px; }
+          .header-area .menu-area nav ul li ul.sub-menu li {
+            display: block;
+            text-align: left;
+            border-bottom: 1px solid #eeeeee; }
+            .header-area .menu-area nav ul li ul.sub-menu li:last-child {
+              border: none; }
+            .header-area .menu-area nav ul li ul.sub-menu li:hover {
+              background: transparent; }
+            .header-area .menu-area nav ul li ul.sub-menu li a {
+              color: #333333;
+              -webkit-transition: .3s;
+              -o-transition: .3s;
+              transition: .3s; }
+              .header-area .menu-area nav ul li ul.sub-menu li a:hover {
+                color: #17d0cf; }
         .header-area .menu-area nav ul li:hover {
-          background-size: 200% auto;
-          border-radius: 5px; }
+          background-size: 200% auto; }
+          .header-area .menu-area nav ul li:hover ul.sub-menu {
+            opacity: 1;
+            visibility: visible;
+            -webkit-transform: scaleY(1);
+            -ms-transform: scaleY(1);
+            transform: scaleY(1); }
   .header-area .login-area {
     color: #fff;
     font-weight: 700;
