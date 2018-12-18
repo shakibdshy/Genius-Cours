@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
       // Slider Area
       $('.slider-active').owlCarousel({
             loop: true,
@@ -16,7 +17,5 @@ $(document).ready(function () {
                   }
             }
       })
-      // Date
-      $("#datepicker").datepicker();
 });
 

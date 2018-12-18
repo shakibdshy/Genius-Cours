@@ -94,11 +94,15 @@
         }
     }
     .login-area{
-        color: #fff;
-        font-weight: 700;
-        font-size: 15px;
         padding: 7px 0;
         margin-top: 2px;
+        a{
+            color: #fff;
+            font-size: 15px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
     }
     .cart-search{
         margin-top: 4px;
