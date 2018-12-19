@@ -31,3 +31,15 @@ $theme-color: #17d0cf;
     color: #ffffff;
     font-weight: 100;
 }
+%owl-nav-button{
+    position: absolute;
+    top: 50%;
+    font-size: 22px !important;
+    width: 60px;
+    height: 60px;
+    background: #f7f7f7 !important;
+    color: #777777 !important;
+    border-radius: 5px;
+    margin: 0 50px;
+    transform: translateY(-50%);
+}
