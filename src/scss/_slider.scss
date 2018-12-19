@@ -27,6 +27,16 @@
                     font-weight: 700;
                 }
             }
+            a{
+                color: #ffffff;
+                text-transform: uppercase;
+                font-weight: 700;
+                border: 2px solid $theme-color;
+                padding: 15px 35px;
+                i{
+                    color: $theme-color;
+                }
+            }
         }
     }
     .owl-nav{

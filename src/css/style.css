@@ -186,6 +186,14 @@ body {
         display: inline-block; }
       .slider-area .single-slider .slider-content h2 span {
         font-weight: 700; }
+      .slider-area .single-slider .slider-content a {
+        color: #ffffff;
+        text-transform: uppercase;
+        font-weight: 700;
+        border: 2px solid #17d0cf;
+        padding: 15px 35px; }
+        .slider-area .single-slider .slider-content a i {
+          color: #17d0cf; }
   .slider-area .owl-nav button.owl-next {
     right: 0; }
   .slider-area .owl-dots {
