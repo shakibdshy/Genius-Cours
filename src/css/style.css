@@ -10,12 +10,13 @@ body {
   background: -o-linear-gradient(left, #01a6fd 0%, #17d0cf 51%, #01a6fd 100%);
   background: linear-gradient(to right, #01a6fd 0%, #17d0cf 51%, #01a6fd 100%); }
 
-.slider-area .single-slider .slider-content p {
+.slider-area .single-slider .slider-content p, .search-area .search-title p {
   color: #cccccc;
   letter-spacing: 7px;
-  position: relative; }
+  position: relative;
+  margin: 0; }
 
-.slider-area .single-slider .slider-content p::after {
+.slider-area .single-slider .slider-content p::after, .search-area .search-title p::after {
   position: absolute;
   content: '.';
   color: #17d0cf;
@@ -24,7 +25,7 @@ body {
   top: -11px;
   text-shadow: 15px 0 #17d0cf; }
 
-.slider-area .single-slider .slider-content p::before {
+.slider-area .single-slider .slider-content p::before, .search-area .search-title p::before {
   position: absolute;
   content: '.';
   color: #17d0cf;
@@ -34,9 +35,8 @@ body {
   left: -40px;
   text-shadow: 15px 0 #17d0cf; }
 
-.slider-area .single-slider .slider-content h2 {
-  font-size: 90px;
-  color: #ffffff;
+.slider-area .single-slider .slider-content h2, .search-area .search-title h2 {
+  font-size: 55px;
   font-weight: 100; }
 
 .slider-area .owl-nav button {
@@ -52,6 +52,17 @@ body {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%); }
+
+.search-area .search form button {
+  padding: 20px 35px;
+  background: -webkit-gradient(linear, left top, right top, from(#01a6fd), color-stop(51%, #17d0cf), to(#01a6fd));
+  background: -webkit-linear-gradient(left, #01a6fd 0%, #17d0cf 51%, #01a6fd 100%);
+  background: -o-linear-gradient(left, #01a6fd 0%, #17d0cf 51%, #01a6fd 100%);
+  background: linear-gradient(to right, #01a6fd 0%, #17d0cf 51%, #01a6fd 100%);
+  color: #ffffff;
+  background-size: 200% auto;
+  text-transform: uppercase;
+  font-weight: 700; }
 
 /* Header Area Start */
 .header-area {
@@ -184,8 +195,11 @@ body {
       right: 0; }
       .slider-area .single-slider .slider-content p {
         display: inline-block; }
-      .slider-area .single-slider .slider-content h2 span {
-        font-weight: 700; }
+      .slider-area .single-slider .slider-content h2 {
+        color: #ffffff;
+        font-size: 90px; }
+        .slider-area .single-slider .slider-content h2 span {
+          font-weight: 700; }
       .slider-area .single-slider .slider-content a {
         color: #ffffff;
         text-transform: uppercase;
@@ -216,3 +230,36 @@ body {
         position: relative;
         bottom: 10px;
         background: #ffffff; }
+
+/*=============== Slider ENd ===============*/
+/*=============== Search Area Start ===============*/
+.search-area .search-title p {
+  display: inline-block; }
+
+.search-area .search-title h2 span {
+  font-weight: 700; }
+
+.search-area .search {
+  margin-top: 15px;
+  margin-bottom: 35px; }
+  .search-area .search form {
+    position: relative; }
+    .search-area .search form input {
+      width: 100%;
+      padding: 20px 25px;
+      background: #f9f9f9;
+      border: none;
+      border-radius: 5px; }
+    .search-area .search form button {
+      border: none;
+      position: absolute;
+      right: 0;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
+      .search-area .search form button:hover {
+        background-position: 190px; }
+
+/*=============== Search Area End ===============*/

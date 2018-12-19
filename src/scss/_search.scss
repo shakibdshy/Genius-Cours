@@ -1,0 +1,49 @@
+/*=============== Search Area Start ===============*/
+.search-area{
+    .search-title{
+        p{
+            @extend %section-title;
+            display: inline-block;
+            &::after {
+                @extend %title-after;
+            }
+
+            &::before {
+                @extend %title-before;
+            }
+        }
+        h2{
+            @extend %title-h;
+            span{
+                font-weight: 700;
+            }
+        }
+    }
+    .search{
+        margin-top: 15px;
+        margin-bottom: 35px;
+        form{
+            position: relative;
+            input{
+                width: 100%;
+                padding: 20px 25px;
+                background: #f9f9f9;
+                border: none;
+                border-radius: 5px;
+            }
+            button{
+                border: none;
+                @extend %button;
+                position: absolute;
+                right: 0;
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+                transition: .3s;
+                &:hover{
+                    background-position: 190px;
+                }
+            }
+        }
+    }
+}
+/*=============== Search Area End ===============*/

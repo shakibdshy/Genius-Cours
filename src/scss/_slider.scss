@@ -23,6 +23,8 @@
             }
             h2{
                 @extend %title-h;
+                color: #ffffff;
+                font-size: 90px;
                 span{
                     font-weight: 700;
                 }
@@ -72,3 +74,4 @@
         }
     }
 }
+/*=============== Slider ENd ===============*/
