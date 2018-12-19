@@ -51,3 +51,6 @@ $theme-color: #17d0cf;
     text-transform: uppercase;
     font-weight: 700;
 }
+%text-gradiant{
+    background: linear-gradient(to right, #01a6fd 0%, #17d0cf 51%, #01a6fd 100%);
+}
