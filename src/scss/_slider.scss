@@ -1,8 +1,32 @@
 /*==================== Slider Area ===================*/
 .slider-area{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    position: relative;
+    top: -90px;
+    width: 100%;
+    .single-slider{
+        position: relative;
+        .slider-content{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            right: 0;
+            p{
+                display: inline-block;
+                @extend %section-title;
+                &::after{
+                    @extend %title-after;
+                }
+                &::before{
+                    @extend %title-before;
+                }
+            }
+            h2{
+                @extend %title-h;
+                span{
+                    font-weight: 700;
+                }
+            }
+        }
+    }
 }

@@ -2,3 +2,32 @@ $theme-color: #17d0cf;
 %theme-gradient{
     background: linear-gradient(to right, #01a6fd 0%, #17d0cf 51%, #01a6fd 100%);
 }
+%section-title{
+    color: #cccccc;
+    letter-spacing: 7px;
+    position: relative;
+}
+%title-after{
+    position: absolute;
+    content: '.';
+    color: $theme-color;
+    font-size: 70px;
+    line-height: 0;
+    top: -11px;
+    text-shadow: 15px 0 $theme-color;
+}
+%title-before{
+    position: absolute;
+    content: '.';
+    color: $theme-color;
+    font-size: 70px;
+    line-height: 0;
+    top: -11px;
+    left: -40px;
+    text-shadow: 15px 0 $theme-color;
+}
+%title-h{
+    font-size: 90px;
+    color: #ffffff;
+    font-weight: 100;
+}
