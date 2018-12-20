@@ -1,0 +1,170 @@
+/*=============== Popular Post Area Start ===============*/
+.popular-course-area{
+    padding-top: 75px;
+    padding-bottom: 100px;
+    position: relative;
+    .popular-section{
+        p{
+            @extend %section-title;
+            margin-left: 40px;
+            &::before{
+                @extend %title-before;
+            }
+            &::after{
+                @extend %title-after;
+            }
+        }
+        h2{
+            @extend %title-h;
+            span{
+                font-weight: 700;
+            }
+        }
+    }
+    .popular-init{
+        .popular-img{
+            position: relative;
+            margin-top: 15px;
+            margin-bottom: 23px;
+            transition: .3s;
+            img{
+                width: 100%;
+            }
+            span {
+                font-weight: 700;
+                @extend %theme-gradient;
+                padding: 5px 15px;
+                display: inline-block;
+                border-radius: 5px;
+                background-size: 200% auto;
+                color: #fff;
+                position: absolute;
+                top: 20px;
+                left: 20px;
+            }
+            a{
+                color: #ffffff;
+                position: absolute;
+                top: 25px;
+                right: 0;
+                font-size: 12px;
+                font-weight: 700;
+                text-transform: uppercase;
+                text-decoration: none;
+                visibility: hidden;
+                opacity: 0;
+                transition: .3s;
+            }
+        }
+        .popular-meta{
+            display: flex;
+            .popular-cata{
+                a{
+                    text-decoration: none;
+                    color: $theme-color;
+                    font-size: 14px;
+                    font-weight: 700;
+                    margin-right: 30px;
+                }
+            }
+            .popular-author{
+                position: relative;
+                margin-right: 30px;
+                span{
+                    font-size: 14px;
+                    font-weight: 700;                    
+                }
+                &::before{
+                    position: absolute;
+                    content: '';
+                    width: 1px;
+                    height: 15px;
+                    left: -15px;
+                    background: #d0d0d0;
+                    top: 5px;
+                }
+            }
+            .popular-review{
+                ul{
+                    margin: 0;
+                    padding: 0;
+                    li{
+                        list-style: none;
+                        float: left;
+                        margin-right: 2px;
+                        font-size: 14px;
+                        color: #ffc926;
+                    }
+                }
+            }
+        }
+        .popular-title{
+            padding-top: 12px;
+            h3{
+                a{
+                    font-size: 22px;
+                    line-height: 1.4;
+                    font-weight: 500;
+                    color: #333;
+                    text-decoration: none;
+                    span {
+                        font-size: 11px;
+                        font-weight: 700;
+                        background: #ff5c26;
+                        padding: 5px 10px;
+                        color: #fff;
+                        border-radius: 4px;
+                        line-height: 1.2;
+                        position: relative;
+                        bottom: 7px;
+                    }
+                }
+            }
+            hr{
+                height: 2px;
+                width: 50px;
+                background: $theme-color;
+                margin-left: 0;
+                margin-top: 25px;
+            }
+        }
+        .popular-view{
+            display: flex;
+            ul{
+                margin: 0;
+                padding: 0;
+                li{
+                    list-style: none;
+                    float: left;
+                    color: #989898;
+                    font-size: 14px;
+                    padding: 5px 15px;
+                    border-radius: 3px;
+                    background-color: #f7f7f7;
+                    margin-right: 5px;
+                    margin-top: 10px;
+                    font-weight: 700;
+                }
+            }
+        }
+        &:hover .popular-img a {
+            opacity: 1;
+            visibility: visible;
+            right: 20px;
+        }
+    }
+    .owl-nav{
+        button{
+            @extend %owl-nav-button;
+            top: -45px;
+            margin: 0;
+            &.owl-prev{
+                left: 89%;
+            }
+            &.owl-next{
+                right: 0;
+            }
+        }
+    }
+}
+/*=============== Popular Post Area End ===============*/

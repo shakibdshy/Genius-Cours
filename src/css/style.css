@@ -4,19 +4,19 @@ body {
   font-size: 16px;
   color: #333333; }
 
-.header-area .menu-area nav ul li:hover {
+.header-area .menu-area nav ul li:hover, .popular-course-area .popular-init .popular-img span {
   background: -webkit-gradient(linear, left top, right top, from(#01a6fd), color-stop(51%, #17d0cf), to(#01a6fd));
   background: -webkit-linear-gradient(left, #01a6fd 0%, #17d0cf 51%, #01a6fd 100%);
   background: -o-linear-gradient(left, #01a6fd 0%, #17d0cf 51%, #01a6fd 100%);
   background: linear-gradient(to right, #01a6fd 0%, #17d0cf 51%, #01a6fd 100%); }
 
-.slider-area .single-slider .slider-content p, .search-area .search-title p {
+.slider-area .single-slider .slider-content p, .search-area .search-title p, .popular-course-area .popular-section p {
   color: #cccccc;
   letter-spacing: 7px;
   position: relative;
   margin: 0; }
 
-.slider-area .single-slider .slider-content p::after, .search-area .search-title p::after {
+.slider-area .single-slider .slider-content p::after, .search-area .search-title p::after, .popular-course-area .popular-section p::after {
   position: absolute;
   content: '.';
   color: #17d0cf;
@@ -25,7 +25,7 @@ body {
   top: -11px;
   text-shadow: 15px 0 #17d0cf; }
 
-.slider-area .single-slider .slider-content p::before, .search-area .search-title p::before {
+.slider-area .single-slider .slider-content p::before, .search-area .search-title p::before, .popular-course-area .popular-section p::before {
   position: absolute;
   content: '.';
   color: #17d0cf;
@@ -35,11 +35,11 @@ body {
   left: -40px;
   text-shadow: 15px 0 #17d0cf; }
 
-.slider-area .single-slider .slider-content h2, .search-area .search-title h2 {
+.slider-area .single-slider .slider-content h2, .search-area .search-title h2, .popular-course-area .popular-section h2 {
   font-size: 55px;
   font-weight: 100; }
 
-.slider-area .owl-nav button {
+.slider-area .owl-nav button, .popular-course-area .owl-nav button {
   position: absolute;
   top: 50%;
   font-size: 22px !important;
@@ -294,3 +294,133 @@ body {
   display: block; }
 
 /*=============== Search Area End ===============*/
+/*=============== Popular Post Area Start ===============*/
+.popular-course-area {
+  padding-top: 75px;
+  padding-bottom: 100px;
+  position: relative; }
+  .popular-course-area .popular-section p {
+    margin-left: 40px; }
+  .popular-course-area .popular-section h2 span {
+    font-weight: 700; }
+  .popular-course-area .popular-init .popular-img {
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 23px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+    .popular-course-area .popular-init .popular-img img {
+      width: 100%; }
+    .popular-course-area .popular-init .popular-img span {
+      font-weight: 700;
+      padding: 5px 15px;
+      display: inline-block;
+      border-radius: 5px;
+      background-size: 200% auto;
+      color: #fff;
+      position: absolute;
+      top: 20px;
+      left: 20px; }
+    .popular-course-area .popular-init .popular-img a {
+      color: #ffffff;
+      position: absolute;
+      top: 25px;
+      right: 0;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-decoration: none;
+      visibility: hidden;
+      opacity: 0;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
+  .popular-course-area .popular-init .popular-meta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .popular-course-area .popular-init .popular-meta .popular-cata a {
+      text-decoration: none;
+      color: #17d0cf;
+      font-size: 14px;
+      font-weight: 700;
+      margin-right: 30px; }
+    .popular-course-area .popular-init .popular-meta .popular-author {
+      position: relative;
+      margin-right: 30px; }
+      .popular-course-area .popular-init .popular-meta .popular-author span {
+        font-size: 14px;
+        font-weight: 700; }
+      .popular-course-area .popular-init .popular-meta .popular-author::before {
+        position: absolute;
+        content: '';
+        width: 1px;
+        height: 15px;
+        left: -15px;
+        background: #d0d0d0;
+        top: 5px; }
+    .popular-course-area .popular-init .popular-meta .popular-review ul {
+      margin: 0;
+      padding: 0; }
+      .popular-course-area .popular-init .popular-meta .popular-review ul li {
+        list-style: none;
+        float: left;
+        margin-right: 2px;
+        font-size: 14px;
+        color: #ffc926; }
+  .popular-course-area .popular-init .popular-title {
+    padding-top: 12px; }
+    .popular-course-area .popular-init .popular-title h3 a {
+      font-size: 22px;
+      line-height: 1.4;
+      font-weight: 500;
+      color: #333;
+      text-decoration: none; }
+      .popular-course-area .popular-init .popular-title h3 a span {
+        font-size: 11px;
+        font-weight: 700;
+        background: #ff5c26;
+        padding: 5px 10px;
+        color: #fff;
+        border-radius: 4px;
+        line-height: 1.2;
+        position: relative;
+        bottom: 7px; }
+    .popular-course-area .popular-init .popular-title hr {
+      height: 2px;
+      width: 50px;
+      background: #17d0cf;
+      margin-left: 0;
+      margin-top: 25px; }
+  .popular-course-area .popular-init .popular-view {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .popular-course-area .popular-init .popular-view ul {
+      margin: 0;
+      padding: 0; }
+      .popular-course-area .popular-init .popular-view ul li {
+        list-style: none;
+        float: left;
+        color: #989898;
+        font-size: 14px;
+        padding: 5px 15px;
+        border-radius: 3px;
+        background-color: #f7f7f7;
+        margin-right: 5px;
+        margin-top: 10px;
+        font-weight: 700; }
+  .popular-course-area .popular-init:hover .popular-img a {
+    opacity: 1;
+    visibility: visible;
+    right: 20px; }
+  .popular-course-area .owl-nav button {
+    top: -45px;
+    margin: 0; }
+    .popular-course-area .owl-nav button.owl-prev {
+      left: 89%; }
+    .popular-course-area .owl-nav button.owl-next {
+      right: 0; }
+
+/*=============== Popular Post Area End ===============*/
