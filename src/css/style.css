@@ -36,11 +36,11 @@ body {
   left: -40px;
   text-shadow: 15px 0 #17d0cf; }
 
-.slider-area .single-slider .slider-content h2, .search-area .search-title h2, .popular-course-area .popular-section h2, .about-area .about-right .about-section h3, .why-choose-area .why-section h3 {
+.slider-area .single-slider .slider-content h2, .search-area .search-title h2, .popular-course-area .popular-section h2, .about-area .about-right .about-section h3, .why-choose-area .why-section h3, .testimonials-area .testimonials-section h3 {
   font-size: 55px;
   font-weight: 300; }
 
-.slider-area .owl-nav button, .popular-course-area .owl-nav button {
+.slider-area .owl-nav button, .popular-course-area .owl-nav button, .testimonials-area .owl-nav button {
   position: absolute;
   top: 50%;
   font-size: 22px !important;
@@ -577,3 +577,71 @@ body {
         width: 40px; }
 
 /*=============== Why Choose Area End ===============*/
+/*============== Testimonial Area Start ================*/
+.testimonials-area {
+  padding-top: 45px;
+  position: relative; }
+  .testimonials-area .testimonials-section h3 {
+    color: #fff; }
+    .testimonials-area .testimonials-section h3 span {
+      font-weight: 700; }
+  .testimonials-area .testimonials-section hr {
+    width: 50px;
+    height: 2px;
+    background: #17d0cf;
+    margin-left: 0;
+    margin-bottom: 30px; }
+  .testimonials-area .single-testimonial {
+    border: 2px solid #3581b4;
+    border-radius: 5px;
+    padding: 35px;
+    color: #fff;
+    position: relative;
+    margin-bottom: 30px; }
+    .testimonials-area .single-testimonial p {
+      line-height: 1.5;
+      font-weight: 300;
+      font-style: italic; }
+      .testimonials-area .single-testimonial p span {
+        font-weight: 700; }
+    .testimonials-area .single-testimonial .testimonial-auton {
+      float: left;
+      color: #17d0cf;
+      font-size: 13px;
+      font-weight: 700;
+      margin-right: 25px;
+      position: relative; }
+      .testimonials-area .single-testimonial .testimonial-auton::before {
+        position: absolute;
+        content: '';
+        width: 1px;
+        height: 12px;
+        right: -14px;
+        top: 5px;
+        background: #17d0cf; }
+    .testimonials-area .single-testimonial .testimonial-cata {
+      overflow: hidden;
+      font-size: 13px;
+      color: #17d0cf; }
+    .testimonials-area .single-testimonial:after {
+      position: absolute;
+      content: '\f10d';
+      font-weight: 900;
+      font-family: 'Font Awesome 5 Free';
+      color: #3080b6;
+      font-size: 40px;
+      right: 35px;
+      padding: 5px 20px;
+      bottom: -30px;
+      background-color: #125693; }
+  .testimonials-area .owl-nav button {
+    margin: 0;
+    top: -60px;
+    background: #3080b6 !important;
+    color: #fff !important; }
+    .testimonials-area .owl-nav button.owl-prev {
+      left: 89%; }
+    .testimonials-area .owl-nav button.owl-next {
+      right: 0; }
+
+/*============== Testimonial Area Start ================*/

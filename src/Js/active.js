@@ -42,9 +42,9 @@ $(document).ready(function () {
                         items: 3
                   }
             }
-      })
+      });
 
-      // Popular Courses Area
+      // Why Choose Area
       $('.why-choose-active').owlCarousel({
             loop: true,
             margin: 30,
@@ -61,6 +61,27 @@ $(document).ready(function () {
                         items: 3
                   }
             }
-      })
+      });
+
+      // Testimonials Area
+      $('.active-testimonials').owlCarousel({
+            loop: true,
+            margin: 30,
+            nav: true,
+            dots: false,
+            navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
+            responsive: {
+                  0: {
+                        items: 1
+                  },
+                  600: {
+                        items: 1
+                  },
+                  1000: {
+                        items: 2
+                  }
+            }
+      });
+
 });
 
