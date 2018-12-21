@@ -1,16 +1,17 @@
 /*=============== About Area Start ===============*/
 .about-area{
     background: #eaeaea;
-    padding: 95px 0;
+    padding-top: 95px;
     .about-init{
         position: relative;
         .about-bg{
             position: relative;
+            bottom: -45px;
         }
     }
     .about-content{
         position: absolute;
-        top: 126px !important;
+        top: 160px !important;
         width: 360px;
         left: 24px;
         padding: 30px;
