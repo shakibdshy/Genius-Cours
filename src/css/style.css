@@ -10,13 +10,13 @@ body {
   background: -o-linear-gradient(left, #01a6fd 0%, #17d0cf 51%, #01a6fd 100%);
   background: linear-gradient(to right, #01a6fd 0%, #17d0cf 51%, #01a6fd 100%); }
 
-.slider-area .single-slider .slider-content p, .search-area .search-title p, .popular-course-area .popular-section p {
+.slider-area .single-slider .slider-content p, .search-area .search-title p, .popular-course-area .popular-section p, .about-area .about-right .about-section p {
   color: #cccccc;
   letter-spacing: 7px;
   position: relative;
   margin: 0; }
 
-.slider-area .single-slider .slider-content p::after, .search-area .search-title p::after, .popular-course-area .popular-section p::after {
+.slider-area .single-slider .slider-content p::after, .search-area .search-title p::after, .popular-course-area .popular-section p::after, .about-area .about-right .about-section p:after {
   position: absolute;
   content: '.';
   color: #17d0cf;
@@ -25,7 +25,7 @@ body {
   top: -11px;
   text-shadow: 15px 0 #17d0cf; }
 
-.slider-area .single-slider .slider-content p::before, .search-area .search-title p::before, .popular-course-area .popular-section p::before {
+.slider-area .single-slider .slider-content p::before, .search-area .search-title p::before, .popular-course-area .popular-section p::before, .about-area .about-right .about-section p:before {
   position: absolute;
   content: '.';
   color: #17d0cf;
@@ -35,9 +35,9 @@ body {
   left: -40px;
   text-shadow: 15px 0 #17d0cf; }
 
-.slider-area .single-slider .slider-content h2, .search-area .search-title h2, .popular-course-area .popular-section h2 {
+.slider-area .single-slider .slider-content h2, .search-area .search-title h2, .popular-course-area .popular-section h2, .about-area .about-right .about-section h3 {
   font-size: 55px;
-  font-weight: 100; }
+  font-weight: 300; }
 
 .slider-area .owl-nav button, .popular-course-area .owl-nav button {
   position: absolute;
@@ -53,8 +53,8 @@ body {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%); }
 
-.search-area .search form button {
-  padding: 20px 35px;
+.search-area .search form a, .about-area .about-right .about-right-content .about-btn a {
+  padding: 12px 30px;
   background: -webkit-gradient(linear, left top, right top, from(#01a6fd), color-stop(51%, #17d0cf), to(#01a6fd));
   background: -webkit-linear-gradient(left, #01a6fd 0%, #17d0cf 51%, #01a6fd 100%);
   background: -o-linear-gradient(left, #01a6fd 0%, #17d0cf 51%, #01a6fd 100%);
@@ -258,8 +258,9 @@ body {
       background: #f9f9f9;
       border: none;
       border-radius: 5px; }
-    .search-area .search form button {
+    .search-area .search form a {
       border: none;
+      padding: 20px 30px;
       position: absolute;
       right: 0;
       border-top-left-radius: 0;
@@ -267,8 +268,9 @@ body {
       -webkit-transition: .3s;
       -o-transition: .3s;
       transition: .3s; }
-      .search-area .search form button:hover {
-        background-position: 190px; }
+      .search-area .search form a:hover {
+        background-position: 190px;
+        color: #fff; }
 
 .search-area .search-content .search-icon {
   font-size: 38px;
@@ -424,3 +426,110 @@ body {
       right: 0; }
 
 /*=============== Popular Post Area End ===============*/
+/*=============== About Area Start ===============*/
+.about-area {
+  background: #eaeaea;
+  padding: 95px 0;
+  /*ABout Right Area */ }
+  .about-area .about-init {
+    position: relative; }
+    .about-area .about-init .about-bg {
+      position: relative; }
+  .about-area .about-content {
+    position: absolute;
+    top: 126px !important;
+    width: 360px;
+    left: 24px;
+    padding: 30px;
+    top: 0; }
+    .about-area .about-content .about-text {
+      text-align: center; }
+      .about-area .about-content .about-text h3 {
+        font-size: 35px;
+        color: #fff;
+        font-weight: 300; }
+        .about-area .about-content .about-text h3 span {
+          font-weight: 700; }
+      .about-area .about-content .about-text p {
+        font-size: 14px;
+        color: #fff; }
+    .about-area .about-content .about-form form input {
+      width: 100%;
+      padding: 10px 15px;
+      color: #aaaaaa;
+      border-radius: 5px;
+      margin-bottom: 5px;
+      border: none; }
+    .about-area .about-content .about-form form select {
+      width: 100%;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 15px;
+      color: #aaaaaa;
+      margin-bottom: 5px; }
+    .about-area .about-content .about-form form textarea {
+      width: 100%;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 15px;
+      color: #aaaaaa;
+      margin-bottom: 5px; }
+    .about-area .about-content .about-form form button {
+      width: 100%;
+      padding: 15px;
+      font-weight: 700;
+      text-transform: uppercase;
+      background: #ff5c26;
+      color: #fff; }
+  .about-area .about-right {
+    padding-top: 25px; }
+    .about-area .about-right .about-section p {
+      margin-left: 30px; }
+    .about-area .about-right .about-section h3 {
+      padding-bottom: 12px; }
+      .about-area .about-right .about-section h3 span {
+        font-weight: 700; }
+    .about-area .about-right .about-right-content span {
+      font-size: 22px;
+      line-height: 1.4;
+      font-weight: 500; }
+    .about-area .about-right .about-right-content hr {
+      width: 50px;
+      height: 2px;
+      background: #17d0cf;
+      margin-left: 0;
+      margin-top: 25px;
+      margin-bottom: 25px; }
+    .about-area .about-right .about-right-content p {
+      font-size: 18px;
+      line-height: 1.4; }
+    .about-area .about-right .about-right-content ul {
+      padding: 0; }
+      .about-area .about-right .about-right-content ul li {
+        list-style: none;
+        line-height: 1.6;
+        font-size: 16px;
+        font-weight: 500;
+        position: relative;
+        padding-left: 25px; }
+        .about-area .about-right .about-right-content ul li::before {
+          position: absolute;
+          content: '';
+          width: 15px;
+          height: 15px;
+          background: #17d0cf;
+          border-radius: 50%;
+          left: 0px;
+          top: 6px; }
+    .about-area .about-right .about-right-content .about-btn {
+      margin-top: 65px; }
+      .about-area .about-right .about-right-content .about-btn a {
+        margin-right: 20px;
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s; }
+        .about-area .about-right .about-right-content .about-btn a:hover {
+          background-size: 200%;
+          background-position: right center; }
+
+/*=============== About Area End ===============*/

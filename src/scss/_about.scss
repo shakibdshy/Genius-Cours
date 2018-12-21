@@ -1,0 +1,148 @@
+/*=============== About Area Start ===============*/
+.about-area{
+    background: #eaeaea;
+    padding: 95px 0;
+    .about-init{
+        position: relative;
+        .about-bg{
+            position: relative;
+        }
+    }
+    .about-content{
+        position: absolute;
+        top: 126px !important;
+        width: 360px;
+        left: 24px;
+        padding: 30px;
+        top: 0;
+        .about-text{
+            text-align: center;
+            h3{
+                font-size: 35px;
+                color: #fff;
+                font-weight: 300;
+                span {
+                    font-weight: 700;
+                }
+            }
+            p {
+                font-size: 14px;
+                color: #fff;
+
+            }
+        }
+        .about-form{
+            form{
+                input{
+                    width: 100%;
+                    padding: 10px 15px;
+                    color: #aaaaaa;
+                    border-radius: 5px;
+                    margin-bottom: 5px;
+                    border: none;
+                }
+                select{
+                    width: 100%;
+                    border: none;
+                    border-radius: 5px;
+                    padding: 10px 15px;
+                    color: #aaaaaa;
+                    margin-bottom: 5px;
+                }
+                textarea{
+                    width: 100%;
+                    border: none;
+                    border-radius: 5px;
+                    padding: 10px 15px;
+                    color: #aaaaaa;
+                    margin-bottom: 5px;
+                }
+                button{
+                    width: 100%;
+                    padding: 15px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    background: #ff5c26;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    /*ABout Right Area */
+    .about-right{
+        padding-top: 25px;;
+        .about-section{
+            p{
+                margin-left: 30px; 
+                @extend %section-title;
+                &:before{
+                    @extend %title-before;
+                }
+                &:after{
+                    @extend %title-after;
+                }
+            }
+            h3{
+                @extend %title-h;
+                padding-bottom: 12px;
+                span{
+                    font-weight: 700;
+                }
+            }
+        }
+        .about-right-content{
+            span{
+                font-size: 22px;
+                line-height: 1.4;
+                font-weight: 500;
+            }
+            hr{
+                width: 50px;
+                height: 2px;
+                background: $theme-color;
+                margin-left: 0;
+                margin-top: 25px;
+                margin-bottom: 25px;
+            }
+            p{
+                font-size: 18px;
+                line-height: 1.4;
+            }
+            ul{
+                padding: 0;
+                li{
+                    list-style: none;
+                    line-height: 1.6;
+                    font-size: 16px;
+                    font-weight: 500;
+                    position: relative;
+                    padding-left: 25px; 
+                    &::before{
+                        position: absolute;
+                        content: '';
+                        width: 15px;
+                        height: 15px;
+                        background: $theme-color;
+                        border-radius: 50%;
+                        left: 0px;
+                        top: 6px;
+                    }
+                }
+            }
+            .about-btn{
+                margin-top: 65px;
+                a{
+                    @extend %button;
+                    margin-right: 20px;
+                    transition: .3s;
+                    &:hover{
+                        background-size: 200%;
+                        background-position: right center;
+                    }
+                }
+            }
+        }
+    }
+}
+/*=============== About Area End ===============*/
