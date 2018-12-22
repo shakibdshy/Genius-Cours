@@ -1,3 +1,65 @@
 /*=============== News Area Start ===============*/
-.blog
+.news-section{
+    h3{
+        @extend %title-h;
+        font-size: 38px;
+        span{
+            font-weight: 700;
+        }
+    }
+    hr{
+        @extend %hr;
+    }
+}
+.news-wrapper{
+    .news-thum{
+        float: left;
+        margin-right: 20px;
+    }
+    .news-content{
+        overflow: hidden;
+        margin-bottom: 30px;
+        .news-date{
+            font-size: 13px;
+            color: #cccccc;
+        }
+        h3{
+            line-height: 0.8;
+            margin-top: 5px;
+            a{
+                text-decoration: none;
+                font-weight: 700;
+                font-size: 19px;
+                color: #333333;
+            }
+        }
+        .news-view{
+            ul{
+                margin: 0;
+                padding: 0;
+                li {
+                    display: inline-block;
+                    list-style: none;
+                    font-size: 14px;
+                    color: #cccccc;
+                    padding: 5px 15px;
+                    background: #f7f7f7;
+                    border-radius: 5px;
+                    margin-top: 10px;
+                    margin-right: 3px;
+                }
+            }
+        }
+    }
+    .news-link{
+        a{
+            font-weight: 700;
+            color: #333333;
+            text-decoration: none;
+            i{
+                color: $theme-color;
+            }
+        }
+    }
+}
 /*=============== News Area End ===============*/

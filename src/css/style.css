@@ -4,6 +4,9 @@ body {
   font-size: 16px;
   color: #333333; }
 
+.mt-30 {
+  margin-top: 30px; }
+
 .header-area .menu-area nav ul li:hover, .popular-course-area .popular-init .popular-img span {
   background: -webkit-gradient(linear, left top, right top, from(#01a6fd), color-stop(51%, #17d0cf), to(#01a6fd));
   background: -webkit-linear-gradient(left, #01a6fd 0%, #17d0cf 51%, #01a6fd 100%);
@@ -36,7 +39,7 @@ body {
   left: -40px;
   text-shadow: 15px 0 #17d0cf; }
 
-.slider-area .single-slider .slider-content h2, .search-area .search-title h2, .popular-course-area .popular-section h2, .about-area .about-right .about-section h3, .why-choose-area .why-section h3, .testimonials-area .testimonials-section h3 {
+.slider-area .single-slider .slider-content h2, .search-area .search-title h2, .popular-course-area .popular-section h2, .about-area .about-right .about-section h3, .why-choose-area .why-section h3, .testimonials-area .testimonials-section h3, .news-section h3 {
   font-size: 55px;
   font-weight: 300; }
 
@@ -72,6 +75,14 @@ body {
   background: linear-gradient(to right, #01a6fd 0%, #17d0cf 51%, #01a6fd 100%);
   background-clip: text;
   color: transparent; }
+
+.news-section hr {
+  width: 50px;
+  height: 2px;
+  background: #17d0cf;
+  margin-left: 0;
+  margin-bottom: 30px;
+  margin-top: 18px; }
 
 /* Header Area Start */
 .header-area {
@@ -645,5 +656,54 @@ body {
       right: 0; }
 
 /*============== Testimonial Area Start ================*/
+/*Blog Area*/
+.blog-area {
+  padding-top: 100px; }
+
 /*=============== News Area Start ===============*/
+.news-section h3 {
+  font-size: 38px; }
+  .news-section h3 span {
+    font-weight: 700; }
+
+.news-wrapper .news-thum {
+  float: left;
+  margin-right: 20px; }
+
+.news-wrapper .news-content {
+  overflow: hidden;
+  margin-bottom: 30px; }
+  .news-wrapper .news-content .news-date {
+    font-size: 13px;
+    color: #cccccc; }
+  .news-wrapper .news-content h3 {
+    line-height: 0.8;
+    margin-top: 5px; }
+    .news-wrapper .news-content h3 a {
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 19px;
+      color: #333333; }
+  .news-wrapper .news-content .news-view ul {
+    margin: 0;
+    padding: 0; }
+    .news-wrapper .news-content .news-view ul li {
+      display: inline-block;
+      list-style: none;
+      font-size: 14px;
+      color: #cccccc;
+      padding: 5px 15px;
+      background: #f7f7f7;
+      border-radius: 5px;
+      margin-top: 10px;
+      margin-right: 3px; }
+
+.news-wrapper .news-link a {
+  font-weight: 700;
+  color: #333333;
+  text-decoration: none; }
+  .news-wrapper .news-link a i {
+    color: #17d0cf; }
+
 /*=============== News Area End ===============*/
+/*Blog Area*/
