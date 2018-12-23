@@ -7,7 +7,7 @@ body {
 .mt-30 {
   margin-top: 30px; }
 
-.header-area .menu-area nav ul li:hover, .popular-course-area .popular-init .popular-img span, .events-area .event-items .single-event .event-date .border-gradient {
+.header-area .menu-area nav ul li:hover, .popular-course-area .popular-init .popular-img span, .events-area .event-items .single-event .event-date .border-gradient, .video-area .video-img .video-icon {
   background: -webkit-gradient(linear, left top, right top, from(#01a6fd), color-stop(51%, #17d0cf), to(#01a6fd));
   background: -webkit-linear-gradient(left, #01a6fd 0%, #17d0cf 51%, #01a6fd 100%);
   background: -o-linear-gradient(left, #01a6fd 0%, #17d0cf 51%, #01a6fd 100%);
@@ -39,7 +39,7 @@ body {
   left: -40px;
   text-shadow: 15px 0 #17d0cf; }
 
-.slider-area .single-slider .slider-content h2, .search-area .search-title h2, .popular-course-area .popular-section h2, .about-area .about-right .about-section h3, .why-choose-area .why-section h3, .testimonials-area .testimonials-section h3, .news-section h3, .events-area .event-section h3 {
+.slider-area .single-slider .slider-content h2, .search-area .search-title h2, .popular-course-area .popular-section h2, .about-area .about-right .about-section h3, .why-choose-area .why-section h3, .testimonials-area .testimonials-section h3, .news-section h3, .events-area .event-section h3, .video-area .video-section h4 {
   font-size: 55px;
   font-weight: 300; }
 
@@ -76,7 +76,7 @@ body {
   background-clip: text;
   color: transparent; }
 
-.news-section hr, .events-area .event-section hr {
+.news-section hr, .events-area .event-section hr, .video-area .video-section hr {
   width: 50px;
   height: 2px;
   background: #17d0cf;
@@ -656,7 +656,9 @@ body {
       right: 0; }
 
 /*============== Testimonial Area Start ================*/
-/*Blog Area*/
+/*================================================
+                    Blog Area
+================================================*/
 .blog-area {
   padding-top: 100px; }
 
@@ -770,4 +772,50 @@ body {
     color: #17d0cf; }
 
 /*=============== Events Area End ================*/
-/*Blog Area*/
+/*=============== Video Area Start ===============*/
+.video-area .video-section h4 {
+  font-size: 38px; }
+  .video-area .video-section h4 span {
+    font-weight: 700; }
+
+.video-area .video-img {
+  position: relative; }
+  .video-area .video-img .video-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%; }
+    .video-area .video-img .video-icon a {
+      color: #fff; }
+
+.video-area .video-content h4 {
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.4;
+  padding-top: 15px; }
+
+.video-area .video-content p {
+  font-size: 15px;
+  color: #cccccc;
+  line-height: 1.4; }
+
+.video-area .video-content a {
+  color: #333333;
+  text-decoration: none;
+  font-weight: 700;
+  margin-top: 35px;
+  display: block; }
+  .video-area .video-content a i {
+    color: #17d0cf; }
+
+/*=============== Video Area End ===============*/
+/*================================================
+                    Blog Area
+================================================*/

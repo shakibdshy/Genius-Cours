@@ -1,0 +1,57 @@
+/*=============== Video Area Start ===============*/
+.video-area{
+    .video-section{
+        h4{
+            @extend %title-h;
+            font-size: 38px;
+            span{
+                font-weight: 700;
+            }
+        }
+        hr{
+            @extend %hr;
+        }
+    }
+    .video-img{
+        position: relative;
+        .video-icon{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 40px;
+            height: 40px;
+            @extend %theme-gradient;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            a{
+                color: #fff;
+            }
+        }
+    }
+    .video-content{
+        h4{
+            font-size: 19px;
+            font-weight: 700;
+            line-height: 1.4;
+            padding-top: 15px;
+        }
+        p{
+            font-size: 15px;
+            color: #cccccc;
+            line-height: 1.4;
+        }
+        a{
+            color: #333333;
+            text-decoration: none;
+            font-weight: 700;
+            margin-top: 35px;
+            display: block;
+            i{
+                color: $theme-color;
+            }
+        }
+    }
+}
+/*=============== Video Area End ===============*/
