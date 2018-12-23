@@ -39,7 +39,7 @@ body {
   left: -40px;
   text-shadow: 15px 0 #17d0cf; }
 
-.slider-area .single-slider .slider-content h2, .search-area .search-title h2, .popular-course-area .popular-section h2, .about-area .about-right .about-section h3, .why-choose-area .why-section h3, .testimonials-area .testimonials-section h3, .news-section h3, .events-area .event-section h3, .video-area .video-section h4 {
+.slider-area .single-slider .slider-content h2, .search-area .search-title h2, .popular-course-area .popular-section h2, .about-area .about-right .about-section h3, .why-choose-area .why-section h3, .testimonials-area .testimonials-section h3, .news-section h3, .events-area .event-section h3, .video-area .video-section h4, .brand-area .brand-section h4 {
   font-size: 55px;
   font-weight: 300; }
 
@@ -76,7 +76,7 @@ body {
   background-clip: text;
   color: transparent; }
 
-.news-section hr, .events-area .event-section hr, .video-area .video-section hr {
+.news-section hr, .events-area .event-section hr, .video-area .video-section hr, .brand-area .brand-section hr {
   width: 50px;
   height: 2px;
   background: #17d0cf;
@@ -819,3 +819,19 @@ body {
 /*================================================
                     Blog Area
 ================================================*/
+/*=============== Sponsor Area Start ===============*/
+.brand-area {
+  padding-top: 65px;
+  padding-bottom: 85px; }
+  .brand-area .brand-section h4 {
+    font-size: 38px; }
+    .brand-area .brand-section h4 span {
+      font-weight: 700; }
+  .brand-area .single-brand {
+    border-right: 1px solid #eeeeee;
+    padding: 0 15px;
+    height: 120px; }
+    .brand-area .single-brand img {
+      width: 100%; }
+
+/*=============== Sponsor Area End ===============*/

@@ -1,0 +1,26 @@
+/*=============== Sponsor Area Start ===============*/
+.brand-area{
+    padding-top: 65px;
+    padding-bottom: 85px;
+    .brand-section{
+        h4{
+            @extend %title-h;
+            font-size: 38px;
+            span{
+                font-weight: 700;
+            }
+        }
+        hr{
+            @extend %hr;            
+        }
+    }
+    .single-brand{
+        border-right: 1px solid #eeeeee;
+        padding: 0 15px;
+        height: 120px;
+        img{
+            width: 100%;
+        }
+    }
+}
+/*=============== Sponsor Area End ===============*/
