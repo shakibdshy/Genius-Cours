@@ -22,5 +22,20 @@
             width: 100%;
         }
     }
+    .owl-nav {
+        button {
+            @extend %owl-nav-button;
+            top: -55px;
+            margin: 0;
+
+            &.owl-prev {
+                left: 89%;
+            }
+
+            &.owl-next {
+                right: 0;
+            }
+        }
+    }
 }
 /*=============== Sponsor Area End ===============*/

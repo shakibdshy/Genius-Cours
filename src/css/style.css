@@ -43,7 +43,7 @@ body {
   font-size: 55px;
   font-weight: 300; }
 
-.slider-area .owl-nav button, .popular-course-area .owl-nav button, .testimonials-area .owl-nav button {
+.slider-area .owl-nav button, .popular-course-area .owl-nav button, .testimonials-area .owl-nav button, .brand-area .owl-nav button {
   position: absolute;
   top: 50%;
   font-size: 22px !important;
@@ -833,5 +833,12 @@ body {
     height: 120px; }
     .brand-area .single-brand img {
       width: 100%; }
+  .brand-area .owl-nav button {
+    top: -55px;
+    margin: 0; }
+    .brand-area .owl-nav button.owl-prev {
+      left: 89%; }
+    .brand-area .owl-nav button.owl-next {
+      right: 0; }
 
 /*=============== Sponsor Area End ===============*/
