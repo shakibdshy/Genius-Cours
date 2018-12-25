@@ -954,3 +954,16 @@ body {
       box-shadow: 10px 10px 20px 1px rgba(0, 0, 0, 0.1); }
 
 /*=============== Best Course Area End ===============*/
+/*=============== Teachers Area Start ===============*/
+.teachers-area {
+  background: url("../img/banner/teacher-b.jpg") center center/cover;
+  padding-top: 100px; }
+  .teachers-area .teachers-items .teacher-thum {
+    position: relative; }
+  .teachers-area .teachers-items .teacher-content .teacher-social ul {
+    margin: 0;
+    padding: 0; }
+    .teachers-area .teachers-items .teacher-content .teacher-social ul li {
+      list-style: none; }
+
+/*=============== Teachers Area End ===============*/

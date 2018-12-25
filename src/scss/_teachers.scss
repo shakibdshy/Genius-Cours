@@ -1,0 +1,39 @@
+/*=============== Teachers Area Start ===============*/
+.teachers-area{
+    background: url('../img/banner/teacher-b.jpg') center center / cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    .teachers-title{
+        p{
+
+        }
+        h2{
+            span{}
+        }
+    }
+    .teachers-items{
+        .teacher-thum{
+            position: relative;
+            img{}
+            hr{}
+            a{}
+        }
+        .teacher-content{
+            .teacher-social{
+                ul{
+                    margin: 0;
+                    padding: 0;
+                    li{
+                        list-style: none;
+                        a{
+                            i{}
+                        }
+                    }
+                }
+            }
+            .author{}
+            .teacher-skill{}
+        }
+    }
+}
+/*=============== Teachers Area End ===============*/
