@@ -1,0 +1,146 @@
+/*=============== Best Course Area Start ===============*/
+.course-area {
+    background: #f7f7f7;
+    padding: 100px 0;
+    .course-section{
+        p{
+            @extend %section-title;
+            &:before{
+                @extend %title-before;
+            }   
+            &::after{
+                @extend %title-after;
+            }   
+        }
+        h4{
+            @extend %title-h;
+            span{
+                font-weight: 700;
+            }
+        }
+    }
+    .course-wrapper{
+        margin-top: 40px;
+        .course-img{
+            position: relative;
+            overflow: hidden;
+            border-radius: 5px;
+            transition: .3s;
+            img{
+                width: 100%;
+            }
+            .tranding{
+                text-align: center;
+                font-size: 12px;
+                font-weight: 700;
+                color: #fff;
+                position: absolute;
+                top: -18px;
+                left: -50px;
+                background: #ff5a00;
+                padding: 30px 35px 5px;
+                transform: rotate(-45deg);
+                span{
+                    display: block;
+                }
+            }
+            .course-pricing{
+                position: absolute;
+                bottom: 20px;
+                left: 20px;
+                span{
+                    padding: 5px 15px;
+                    @extend %theme-gradient;
+                    border-radius: 5px;
+                    background-size: 200% auto;
+                    font-weight: 700;
+                    color: #fff;
+                    display: inline-block;
+                }
+            }
+            .course-rating{
+                position: absolute;
+                right: 20px;
+                bottom: 25px;
+                ul{
+                    margin: 0;
+                    padding: 0;
+                    li{
+                        list-style: none;
+                        display: inline-block;
+                        margin-right: 2px;
+                        i{
+                            color: #ffc926;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+            .course-detail{
+                position: absolute;
+                right: 0;
+                bottom: 25px;
+                transition: .3s;
+                opacity: 0;
+                visibility: hidden;
+                a{
+                    font-size: 12px;
+                    color: #ffffff;
+                    font-weight: 700;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        .course-content{
+            padding: 25px;
+            background: #ffffff;
+            border-radius: 5px;
+            transition: .3s;
+            h4{
+                a{
+                    font-size: 18px;
+                    line-height: 1.4;
+                    text-decoration: none;
+                    color: #333;
+                }
+            }
+            .course-author{
+                float: left;
+                font-size: 12px;
+                color: #ccc;
+                margin-right: 25px;
+                margin-top: 8px;
+            }
+            .course-enroll{
+                overflow: hidden;
+                font-size: 12px;
+                color: #ccc;
+                padding-top: 8px;
+            }
+        }
+        &:hover{
+            .course-img {
+                &::before{
+                    position: absolute;
+                    content: '';
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, 0.65);
+                }
+                .course-rating{
+                    visibility: hidden;
+                }
+                .course-detail{
+                    opacity: 1;
+                    visibility: visible;
+                    right: 20px;
+                }
+            }
+            .course-content{
+                box-shadow: 10px 10px 20px 1px rgba(0, 0, 0, 0.1);
+            }
+        }
+    }
+}
+/*=============== Best Course Area End ===============*/

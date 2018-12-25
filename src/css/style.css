@@ -7,20 +7,20 @@ body {
 .mt-30 {
   margin-top: 30px; }
 
-.header-area .menu-area nav ul li:hover, .popular-course-area .popular-init .popular-img span, .events-area .event-items .single-event .event-date .border-gradient, .video-area .video-img .video-icon {
+.header-area .menu-area nav ul li:hover, .popular-course-area .popular-init .popular-img span, .events-area .event-items .single-event .event-date .border-gradient, .video-area .video-img .video-icon, .course-area .course-wrapper .course-img .course-pricing span {
   background: -webkit-gradient(linear, left top, right top, from(#01a6fd), color-stop(51%, #17d0cf), to(#01a6fd));
   background: -webkit-linear-gradient(left, #01a6fd 0%, #17d0cf 51%, #01a6fd 100%);
   background: -o-linear-gradient(left, #01a6fd 0%, #17d0cf 51%, #01a6fd 100%);
   background: linear-gradient(to right, #01a6fd 0%, #17d0cf 51%, #01a6fd 100%); }
 
-.slider-area .single-slider .slider-content p, .search-area .search-title p, .popular-course-area .popular-section p, .about-area .about-right .about-section p, .why-choose-area .why-section p {
+.slider-area .single-slider .slider-content p, .search-area .search-title p, .popular-course-area .popular-section p, .about-area .about-right .about-section p, .why-choose-area .why-section p, .course-area .course-section p {
   color: #cccccc;
   letter-spacing: 7px;
   position: relative;
   margin: 0;
   display: inline-block; }
 
-.slider-area .single-slider .slider-content p::after, .search-area .search-title p::after, .popular-course-area .popular-section p::after, .about-area .about-right .about-section p:after, .why-choose-area .why-section p:after {
+.slider-area .single-slider .slider-content p::after, .search-area .search-title p::after, .popular-course-area .popular-section p::after, .about-area .about-right .about-section p:after, .why-choose-area .why-section p:after, .course-area .course-section p::after {
   position: absolute;
   content: '.';
   color: #17d0cf;
@@ -29,7 +29,7 @@ body {
   top: -11px;
   text-shadow: 15px 0 #17d0cf; }
 
-.slider-area .single-slider .slider-content p::before, .search-area .search-title p::before, .popular-course-area .popular-section p::before, .about-area .about-right .about-section p:before, .why-choose-area .why-section p:before {
+.slider-area .single-slider .slider-content p::before, .search-area .search-title p::before, .popular-course-area .popular-section p::before, .about-area .about-right .about-section p:before, .why-choose-area .why-section p:before, .course-area .course-section p:before {
   position: absolute;
   content: '.';
   color: #17d0cf;
@@ -39,7 +39,7 @@ body {
   left: -40px;
   text-shadow: 15px 0 #17d0cf; }
 
-.slider-area .single-slider .slider-content h2, .search-area .search-title h2, .popular-course-area .popular-section h2, .about-area .about-right .about-section h3, .why-choose-area .why-section h3, .testimonials-area .testimonials-section h3, .news-section h3, .events-area .event-section h3, .video-area .video-section h4, .brand-area .brand-section h4 {
+.slider-area .single-slider .slider-content h2, .search-area .search-title h2, .popular-course-area .popular-section h2, .about-area .about-right .about-section h3, .why-choose-area .why-section h3, .testimonials-area .testimonials-section h3, .news-section h3, .events-area .event-section h3, .video-area .video-section h4, .brand-area .brand-section h4, .course-area .course-section h4 {
   font-size: 55px;
   font-weight: 300; }
 
@@ -842,3 +842,115 @@ body {
       right: 0; }
 
 /*=============== Sponsor Area End ===============*/
+/*=============== Best Course Area Start ===============*/
+.course-area {
+  background: #f7f7f7;
+  padding: 100px 0; }
+  .course-area .course-section h4 span {
+    font-weight: 700; }
+  .course-area .course-wrapper {
+    margin-top: 40px; }
+    .course-area .course-wrapper .course-img {
+      position: relative;
+      overflow: hidden;
+      border-radius: 5px;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
+      .course-area .course-wrapper .course-img img {
+        width: 100%; }
+      .course-area .course-wrapper .course-img .tranding {
+        text-align: center;
+        font-size: 12px;
+        font-weight: 700;
+        color: #fff;
+        position: absolute;
+        top: -18px;
+        left: -50px;
+        background: #ff5a00;
+        padding: 30px 35px 5px;
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg); }
+        .course-area .course-wrapper .course-img .tranding span {
+          display: block; }
+      .course-area .course-wrapper .course-img .course-pricing {
+        position: absolute;
+        bottom: 20px;
+        left: 20px; }
+        .course-area .course-wrapper .course-img .course-pricing span {
+          padding: 5px 15px;
+          border-radius: 5px;
+          background-size: 200% auto;
+          font-weight: 700;
+          color: #fff;
+          display: inline-block; }
+      .course-area .course-wrapper .course-img .course-rating {
+        position: absolute;
+        right: 20px;
+        bottom: 25px; }
+        .course-area .course-wrapper .course-img .course-rating ul {
+          margin: 0;
+          padding: 0; }
+          .course-area .course-wrapper .course-img .course-rating ul li {
+            list-style: none;
+            display: inline-block;
+            margin-right: 2px; }
+            .course-area .course-wrapper .course-img .course-rating ul li i {
+              color: #ffc926;
+              font-size: 14px; }
+      .course-area .course-wrapper .course-img .course-detail {
+        position: absolute;
+        right: 0;
+        bottom: 25px;
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s;
+        opacity: 0;
+        visibility: hidden; }
+        .course-area .course-wrapper .course-img .course-detail a {
+          font-size: 12px;
+          color: #ffffff;
+          font-weight: 700;
+          text-decoration: none;
+          text-transform: uppercase; }
+    .course-area .course-wrapper .course-content {
+      padding: 25px;
+      background: #ffffff;
+      border-radius: 5px;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
+      .course-area .course-wrapper .course-content h4 a {
+        font-size: 18px;
+        line-height: 1.4;
+        text-decoration: none;
+        color: #333; }
+      .course-area .course-wrapper .course-content .course-author {
+        float: left;
+        font-size: 12px;
+        color: #ccc;
+        margin-right: 25px;
+        margin-top: 8px; }
+      .course-area .course-wrapper .course-content .course-enroll {
+        overflow: hidden;
+        font-size: 12px;
+        color: #ccc;
+        padding-top: 8px; }
+    .course-area .course-wrapper:hover .course-img::before {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.65); }
+    .course-area .course-wrapper:hover .course-img .course-rating {
+      visibility: hidden; }
+    .course-area .course-wrapper:hover .course-img .course-detail {
+      opacity: 1;
+      visibility: visible;
+      right: 20px; }
+    .course-area .course-wrapper:hover .course-content {
+      -webkit-box-shadow: 10px 10px 20px 1px rgba(0, 0, 0, 0.1);
+      box-shadow: 10px 10px 20px 1px rgba(0, 0, 0, 0.1); }
+
+/*=============== Best Course Area End ===============*/
