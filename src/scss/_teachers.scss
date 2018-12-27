@@ -5,34 +5,129 @@
     padding-bottom: 100px;
     .teachers-title{
         p{
-
+            @extend %section-title;
+            &:before{
+                @extend %title-before;
+            }
+            &:after{
+                @extend %title-after;
+            }
         }
         h2{
-            span{}
+            @extend %title-h;
+            color: #fff;
+            span{
+                font-weight: 700;
+            }
         }
     }
     .teachers-items{
+        margin-top: 85px;
         .teacher-thum{
             position: relative;
-            img{}
-            hr{}
-            a{}
+            left: 120px;
+            top: -20px;
+            z-index: 2;
+            display: inline-block;
+            img{
+                width: 150px;
+                height: 150px;
+                border-radius: 5px;
+            }
+            hr{
+                @extend %hr;
+                position: relative;
+                top: -30px;
+                margin: 0;
+                left: -25px;
+            }
+            a{
+                @extend %theme-gradient;
+                text-transform: uppercase;
+                background-size: 200%;
+                color: #fff;
+                font-size: 12px;
+                position: relative;
+                top: -45px;
+                left: 66px;
+                opacity: 0;
+                visibility: hidden;
+                transition: .3s;
+                &:hover{
+                    background-position: right center;
+                }
+            }
         }
         .teacher-content{
+            background: #094f82;
+            width: 270px;
+            position: absolute;
+            padding: 20px;
+            top: 85px;
+            transition: .3s;
             .teacher-social{
                 ul{
                     margin: 0;
                     padding: 0;
                     li{
                         list-style: none;
+                        width: 35px;
+                        height: 35px;
+                        line-height: 30px;
+                        text-align: center;
+                        border-radius: 50%; 
+                        padding: 5px;
+                        background: #0e5c8f;
+                        margin-bottom: 5px;
+                        transition: .3s;
+                        &:hover{
+                            background: #fff;
+                        }
                         a{
-                            i{}
+                            color: #3b7ca7;
+                            
                         }
                     }
                 }
             }
-            .author{}
-            .teacher-skill{}
+            .author{
+                float: left;
+                color: #fff;
+                margin-top: 15px;
+                width: 43%;
+                font-weight: 700;
+                line-height: 1;
+            }
+            .teacher-skill{
+                overflow: hidden;
+                float: right;
+                color: $theme-color;
+                margin-top: 30px;
+                font-size: 13px;
+            }
+        }
+        &:hover{
+            .teacher-thum{
+                a{
+                    left: 36px;
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+    .teacher-btn{
+        margin-top: 55px !important;
+        a{
+            @extend %button;
+            transition: .3s;
+            i{
+                color: #01a7fc;
+            }
+            &:hover{
+                background-position: right center;
+
+            }
         }
     }
 }

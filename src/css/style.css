@@ -7,20 +7,20 @@ body {
 .mt-30 {
   margin-top: 30px; }
 
-.header-area .menu-area nav ul li:hover, .popular-course-area .popular-init .popular-img span, .events-area .event-items .single-event .event-date .border-gradient, .video-area .video-img .video-icon, .course-area .course-wrapper .course-img .course-pricing span {
+.header-area .menu-area nav ul li:hover, .popular-course-area .popular-init .popular-img span, .events-area .event-items .single-event .event-date .border-gradient, .video-area .video-img .video-icon, .course-area .course-wrapper .course-img .course-pricing span, .teachers-area .teachers-items .teacher-thum a {
   background: -webkit-gradient(linear, left top, right top, from(#01a6fd), color-stop(51%, #17d0cf), to(#01a6fd));
   background: -webkit-linear-gradient(left, #01a6fd 0%, #17d0cf 51%, #01a6fd 100%);
   background: -o-linear-gradient(left, #01a6fd 0%, #17d0cf 51%, #01a6fd 100%);
   background: linear-gradient(to right, #01a6fd 0%, #17d0cf 51%, #01a6fd 100%); }
 
-.slider-area .single-slider .slider-content p, .search-area .search-title p, .popular-course-area .popular-section p, .about-area .about-right .about-section p, .why-choose-area .why-section p, .course-area .course-section p {
+.slider-area .single-slider .slider-content p, .search-area .search-title p, .popular-course-area .popular-section p, .about-area .about-right .about-section p, .why-choose-area .why-section p, .course-area .course-section p, .teachers-area .teachers-title p {
   color: #cccccc;
   letter-spacing: 7px;
   position: relative;
   margin: 0;
   display: inline-block; }
 
-.slider-area .single-slider .slider-content p::after, .search-area .search-title p::after, .popular-course-area .popular-section p::after, .about-area .about-right .about-section p:after, .why-choose-area .why-section p:after, .course-area .course-section p::after {
+.slider-area .single-slider .slider-content p::after, .search-area .search-title p::after, .popular-course-area .popular-section p::after, .about-area .about-right .about-section p:after, .why-choose-area .why-section p:after, .course-area .course-section p::after, .teachers-area .teachers-title p:after {
   position: absolute;
   content: '.';
   color: #17d0cf;
@@ -29,7 +29,7 @@ body {
   top: -11px;
   text-shadow: 15px 0 #17d0cf; }
 
-.slider-area .single-slider .slider-content p::before, .search-area .search-title p::before, .popular-course-area .popular-section p::before, .about-area .about-right .about-section p:before, .why-choose-area .why-section p:before, .course-area .course-section p:before {
+.slider-area .single-slider .slider-content p::before, .search-area .search-title p::before, .popular-course-area .popular-section p::before, .about-area .about-right .about-section p:before, .why-choose-area .why-section p:before, .course-area .course-section p:before, .teachers-area .teachers-title p:before {
   position: absolute;
   content: '.';
   color: #17d0cf;
@@ -39,7 +39,7 @@ body {
   left: -40px;
   text-shadow: 15px 0 #17d0cf; }
 
-.slider-area .single-slider .slider-content h2, .search-area .search-title h2, .popular-course-area .popular-section h2, .about-area .about-right .about-section h3, .why-choose-area .why-section h3, .testimonials-area .testimonials-section h3, .news-section h3, .events-area .event-section h3, .video-area .video-section h4, .brand-area .brand-section h4, .course-area .course-section h4 {
+.slider-area .single-slider .slider-content h2, .search-area .search-title h2, .popular-course-area .popular-section h2, .about-area .about-right .about-section h3, .why-choose-area .why-section h3, .testimonials-area .testimonials-section h3, .news-section h3, .events-area .event-section h3, .video-area .video-section h4, .brand-area .brand-section h4, .course-area .course-section h4, .teachers-area .teachers-title h2 {
   font-size: 55px;
   font-weight: 300; }
 
@@ -57,7 +57,7 @@ body {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%); }
 
-.search-area .search form a, .about-area .about-right .about-right-content .about-btn a {
+.search-area .search form a, .about-area .about-right .about-right-content .about-btn a, .teachers-area .teacher-btn a {
   padding: 12px 30px;
   background: -webkit-gradient(linear, left top, right top, from(#01a6fd), color-stop(51%, #17d0cf), to(#01a6fd));
   background: -webkit-linear-gradient(left, #01a6fd 0%, #17d0cf 51%, #01a6fd 100%);
@@ -76,7 +76,7 @@ body {
   background-clip: text;
   color: transparent; }
 
-.news-section hr, .events-area .event-section hr, .video-area .video-section hr, .brand-area .brand-section hr {
+.news-section hr, .events-area .event-section hr, .video-area .video-section hr, .brand-area .brand-section hr, .teachers-area .teachers-items .teacher-thum hr {
   width: 50px;
   height: 2px;
   background: #17d0cf;
@@ -957,13 +957,99 @@ body {
 /*=============== Teachers Area Start ===============*/
 .teachers-area {
   background: url("../img/banner/teacher-b.jpg") center center/cover;
-  padding-top: 100px; }
-  .teachers-area .teachers-items .teacher-thum {
-    position: relative; }
-  .teachers-area .teachers-items .teacher-content .teacher-social ul {
-    margin: 0;
-    padding: 0; }
-    .teachers-area .teachers-items .teacher-content .teacher-social ul li {
-      list-style: none; }
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  .teachers-area .teachers-title h2 {
+    color: #fff; }
+    .teachers-area .teachers-title h2 span {
+      font-weight: 700; }
+  .teachers-area .teachers-items {
+    margin-top: 85px; }
+    .teachers-area .teachers-items .teacher-thum {
+      position: relative;
+      left: 120px;
+      top: -20px;
+      z-index: 2;
+      display: inline-block; }
+      .teachers-area .teachers-items .teacher-thum img {
+        width: 150px;
+        height: 150px;
+        border-radius: 5px; }
+      .teachers-area .teachers-items .teacher-thum hr {
+        position: relative;
+        top: -30px;
+        margin: 0;
+        left: -25px; }
+      .teachers-area .teachers-items .teacher-thum a {
+        text-transform: uppercase;
+        background-size: 200%;
+        color: #fff;
+        font-size: 12px;
+        position: relative;
+        top: -45px;
+        left: 66px;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s; }
+        .teachers-area .teachers-items .teacher-thum a:hover {
+          background-position: right center; }
+    .teachers-area .teachers-items .teacher-content {
+      background: #094f82;
+      width: 270px;
+      position: absolute;
+      padding: 20px;
+      top: 85px;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
+      .teachers-area .teachers-items .teacher-content .teacher-social ul {
+        margin: 0;
+        padding: 0; }
+        .teachers-area .teachers-items .teacher-content .teacher-social ul li {
+          list-style: none;
+          width: 35px;
+          height: 35px;
+          line-height: 30px;
+          text-align: center;
+          border-radius: 50%;
+          padding: 5px;
+          background: #0e5c8f;
+          margin-bottom: 5px;
+          -webkit-transition: .3s;
+          -o-transition: .3s;
+          transition: .3s; }
+          .teachers-area .teachers-items .teacher-content .teacher-social ul li:hover {
+            background: #fff; }
+          .teachers-area .teachers-items .teacher-content .teacher-social ul li a {
+            color: #3b7ca7; }
+      .teachers-area .teachers-items .teacher-content .author {
+        float: left;
+        color: #fff;
+        margin-top: 15px;
+        width: 43%;
+        font-weight: 700;
+        line-height: 1; }
+      .teachers-area .teachers-items .teacher-content .teacher-skill {
+        overflow: hidden;
+        float: right;
+        color: #17d0cf;
+        margin-top: 30px;
+        font-size: 13px; }
+    .teachers-area .teachers-items:hover .teacher-thum a {
+      left: 36px;
+      opacity: 1;
+      visibility: visible; }
+  .teachers-area .teacher-btn {
+    margin-top: 55px !important; }
+    .teachers-area .teacher-btn a {
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
+      .teachers-area .teacher-btn a i {
+        color: #01a7fc; }
+      .teachers-area .teacher-btn a:hover {
+        background-position: right center; }
 
 /*=============== Teachers Area End ===============*/
