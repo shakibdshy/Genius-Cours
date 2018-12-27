@@ -7,7 +7,7 @@ body {
 .mt-30 {
   margin-top: 30px; }
 
-.header-area .menu-area nav ul li:hover, .popular-course-area .popular-init .popular-img span, .events-area .event-items .single-event .event-date .border-gradient, .video-area .video-img .video-icon, .course-area .course-wrapper .course-img .course-pricing span, .teachers-area .teachers-items .teacher-thum a {
+.header-area .menu-area nav ul li:hover, .popular-course-area .popular-init .popular-img span, .events-area .event-items .single-event .event-date .border-gradient, .video-area .video-img .video-icon, .course-area .course-wrapper .course-img .course-pricing span, .teachers-area .teachers-items .teacher-thum a, .products-area .single-product .product-content .product-cart:hover {
   background: -webkit-gradient(linear, left top, right top, from(#01a6fd), color-stop(51%, #17d0cf), to(#01a6fd));
   background: -webkit-linear-gradient(left, #01a6fd 0%, #17d0cf 51%, #01a6fd 100%);
   background: -o-linear-gradient(left, #01a6fd 0%, #17d0cf 51%, #01a6fd 100%);
@@ -39,11 +39,11 @@ body {
   left: -40px;
   text-shadow: 15px 0 #17d0cf; }
 
-.slider-area .single-slider .slider-content h2, .search-area .search-title h2, .popular-course-area .popular-section h2, .about-area .about-right .about-section h3, .why-choose-area .why-section h3, .testimonials-area .testimonials-section h3, .news-section h3, .events-area .event-section h3, .video-area .video-section h4, .brand-area .brand-section h4, .course-area .course-section h4, .teachers-area .teachers-title h2 {
+.slider-area .single-slider .slider-content h2, .search-area .search-title h2, .popular-course-area .popular-section h2, .about-area .about-right .about-section h3, .why-choose-area .why-section h3, .testimonials-area .testimonials-section h3, .news-section h3, .events-area .event-section h3, .video-area .video-section h4, .brand-area .brand-section h4, .course-area .course-section h4, .teachers-area .teachers-title h2, .products-area .product-section h2 {
   font-size: 55px;
   font-weight: 300; }
 
-.slider-area .owl-nav button, .popular-course-area .owl-nav button, .testimonials-area .owl-nav button, .brand-area .owl-nav button {
+.slider-area .owl-nav button, .popular-course-area .owl-nav button, .testimonials-area .owl-nav button, .brand-area .owl-nav button, .products-area .owl-nav button {
   position: absolute;
   top: 50%;
   font-size: 22px !important;
@@ -76,7 +76,7 @@ body {
   background-clip: text;
   color: transparent; }
 
-.news-section hr, .events-area .event-section hr, .video-area .video-section hr, .brand-area .brand-section hr, .teachers-area .teachers-items .teacher-thum hr {
+.news-section hr, .events-area .event-section hr, .video-area .video-section hr, .brand-area .brand-section hr, .teachers-area .teachers-items .teacher-thum hr, .products-area .product-section hr {
   width: 50px;
   height: 2px;
   background: #17d0cf;
@@ -1053,3 +1053,74 @@ body {
         background-position: right center; }
 
 /*=============== Teachers Area End ===============*/
+/*=============== Products Area Start ===============*/
+.products-area {
+  padding: 100px 0; }
+  .products-area .product-section h2 span {
+    font-weight: 700; }
+  .products-area .single-product {
+    background: #f5f5f5;
+    padding: 25px;
+    margin-top: 10px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    border-radius: 5px;
+    max-width: 290px; }
+    .products-area .single-product .product-img img {
+      width: auto; }
+    .products-area .single-product .product-content {
+      padding-top: 25px; }
+      .products-area .single-product .product-content .product-text {
+        float: left; }
+        .products-area .single-product .product-content .product-text h4 {
+          font-size: 18px;
+          line-height: 1.4;
+          margin: 0;
+          font-weight: 700; }
+          .products-area .single-product .product-content .product-text h4 a {
+            color: #333333;
+            text-decoration: none; }
+        .products-area .single-product .product-content .product-text p {
+          font-size: 12px;
+          color: #cccccc;
+          font-weight: 700; }
+          .products-area .single-product .product-content .product-text p span {
+            font-weight: 500;
+            color: #00dfbf; }
+      .products-area .single-product .product-content .product-cart {
+        overflow: hidden;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        background: #fff;
+        border-radius: 50%;
+        line-height: 40px;
+        display: inline-block;
+        margin-left: 15px;
+        margin-top: 5px;
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s; }
+        .products-area .single-product .product-content .product-cart:hover {
+          background-size: 200%; }
+        .products-area .single-product .product-content .product-cart a {
+          color: #bbbbbb;
+          -webkit-transition: all 0.3s ease;
+          -o-transition: all 0.3s ease;
+          transition: all 0.3s ease; }
+          .products-area .single-product .product-content .product-cart a:hover {
+            color: #fff; }
+    .products-area .single-product:hover {
+      background: #fff;
+      -webkit-box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0.1);
+      box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0.1); }
+  .products-area .owl-nav button {
+    top: -55px;
+    margin: 0; }
+    .products-area .owl-nav button.owl-prev {
+      left: 89%; }
+    .products-area .owl-nav button.owl-next {
+      right: 0; }
+
+/*=============== Products Area End ===============*/

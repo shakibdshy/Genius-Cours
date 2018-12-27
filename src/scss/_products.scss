@@ -1,0 +1,97 @@
+/*=============== Products Area Start ===============*/
+.products-area{
+    padding: 100px 0;
+    .product-section{
+        h2{
+            @extend %title-h;
+            span{
+                font-weight: 700;
+            }
+        }
+        hr{
+            @extend %hr;
+        }
+    }
+    .single-product{
+        background: #f5f5f5;
+        padding: 25px;
+        margin-top: 10px;
+        transition: .3s;
+        border-radius: 5px;
+        max-width: 290px;
+        .product-img {
+            img{
+                width: auto;
+            }
+        }
+        .product-content{
+            padding-top: 25px;
+            .product-text {
+                float: left;
+                h4{
+                    font-size: 18px;
+                    line-height: 1.4;
+                    margin: 0;
+                    font-weight: 700;
+                    a{
+                        color: #333333;
+                        text-decoration: none;
+                    }
+                }
+                p{
+                    font-size: 12px;
+                    color: #cccccc;
+                    font-weight: 700;
+                    span{
+                        font-weight: 500;
+                        color: #00dfbf;
+                    }
+                }
+            }
+            .product-cart{
+                overflow: hidden;
+                width: 40px;
+                height: 40px;
+                text-align: center;
+                background: #fff;
+                border-radius: 50%;
+                line-height: 40px;
+                display: inline-block;
+                margin-left: 15px;
+                margin-top: 5px;
+                transition: .3s;
+                &:hover{
+                    @extend %theme-gradient;
+                    background-size: 200%;
+                }
+                a{
+                    color: #bbbbbb;
+                    transition: all 0.3s ease;
+                    &:hover{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        &:hover{
+            background: #fff;
+            box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0.1);
+        }
+    }
+    .owl-nav {
+        button {
+            @extend %owl-nav-button;
+            top: -55px;
+            margin: 0;
+
+            &.owl-prev {
+                left: 89%;
+            }
+
+            &.owl-next {
+                right: 0;
+            }
+        }
+    }
+}
+/*=============== Products Area End ===============*/
