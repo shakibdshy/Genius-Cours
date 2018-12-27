@@ -7,20 +7,20 @@ body {
 .mt-30 {
   margin-top: 30px; }
 
-.header-area .menu-area nav ul li:hover, .popular-course-area .popular-init .popular-img span, .events-area .event-items .single-event .event-date .border-gradient, .video-area .video-img .video-icon, .course-area .course-wrapper .course-img .course-pricing span, .teachers-area .teachers-items .teacher-thum a, .products-area .single-product .product-content .product-cart:hover {
+.header-area .menu-area nav ul li:hover, .popular-course-area .popular-init .popular-img span, .events-area .event-items .single-event .event-date .border-gradient, .video-area .video-img .video-icon, .course-area .course-wrapper .course-img .course-pricing span, .teachers-area .teachers-items .teacher-thum a, .products-area .single-product .product-content .product-cart:hover, .categorys-area .category-item::after {
   background: -webkit-gradient(linear, left top, right top, from(#01a6fd), color-stop(51%, #17d0cf), to(#01a6fd));
   background: -webkit-linear-gradient(left, #01a6fd 0%, #17d0cf 51%, #01a6fd 100%);
   background: -o-linear-gradient(left, #01a6fd 0%, #17d0cf 51%, #01a6fd 100%);
   background: linear-gradient(to right, #01a6fd 0%, #17d0cf 51%, #01a6fd 100%); }
 
-.slider-area .single-slider .slider-content p, .search-area .search-title p, .popular-course-area .popular-section p, .about-area .about-right .about-section p, .why-choose-area .why-section p, .course-area .course-section p, .teachers-area .teachers-title p, .faq-area .faq-section p {
+.slider-area .single-slider .slider-content p, .search-area .search-title p, .popular-course-area .popular-section p, .about-area .about-right .about-section p, .why-choose-area .why-section p, .course-area .course-section p, .teachers-area .teachers-title p, .faq-area .faq-section p, .categorys-area .categorys-section p {
   color: #cccccc;
   letter-spacing: 7px;
   position: relative;
   margin: 0;
   display: inline-block; }
 
-.slider-area .single-slider .slider-content p::after, .search-area .search-title p::after, .popular-course-area .popular-section p::after, .about-area .about-right .about-section p:after, .why-choose-area .why-section p:after, .course-area .course-section p::after, .teachers-area .teachers-title p:after, .faq-area .faq-section p:after {
+.slider-area .single-slider .slider-content p::after, .search-area .search-title p::after, .popular-course-area .popular-section p::after, .about-area .about-right .about-section p:after, .why-choose-area .why-section p:after, .course-area .course-section p::after, .teachers-area .teachers-title p:after, .faq-area .faq-section p:after, .categorys-area .categorys-section p:after {
   position: absolute;
   content: '.';
   color: #17d0cf;
@@ -29,7 +29,7 @@ body {
   top: -11px;
   text-shadow: 15px 0 #17d0cf; }
 
-.slider-area .single-slider .slider-content p::before, .search-area .search-title p::before, .popular-course-area .popular-section p::before, .about-area .about-right .about-section p:before, .why-choose-area .why-section p:before, .course-area .course-section p:before, .teachers-area .teachers-title p:before, .faq-area .faq-section p:before {
+.slider-area .single-slider .slider-content p::before, .search-area .search-title p::before, .popular-course-area .popular-section p::before, .about-area .about-right .about-section p:before, .why-choose-area .why-section p:before, .course-area .course-section p:before, .teachers-area .teachers-title p:before, .faq-area .faq-section p:before, .categorys-area .categorys-section p:before {
   position: absolute;
   content: '.';
   color: #17d0cf;
@@ -39,7 +39,7 @@ body {
   left: -40px;
   text-shadow: 15px 0 #17d0cf; }
 
-.slider-area .single-slider .slider-content h2, .search-area .search-title h2, .popular-course-area .popular-section h2, .about-area .about-right .about-section h3, .why-choose-area .why-section h3, .testimonials-area .testimonials-section h3, .news-section h3, .events-area .event-section h3, .video-area .video-section h4, .brand-area .brand-section h4, .course-area .course-section h4, .teachers-area .teachers-title h2, .products-area .product-section h2, .faq-area .faq-section h2 {
+.slider-area .single-slider .slider-content h2, .search-area .search-title h2, .popular-course-area .popular-section h2, .about-area .about-right .about-section h3, .why-choose-area .why-section h3, .testimonials-area .testimonials-section h3, .news-section h3, .events-area .event-section h3, .video-area .video-section h4, .brand-area .brand-section h4, .course-area .course-section h4, .teachers-area .teachers-title h2, .products-area .product-section h2, .faq-area .faq-section h2, .categorys-area .categorys-section h2 {
   font-size: 55px;
   font-weight: 300; }
 
@@ -68,7 +68,7 @@ body {
   text-transform: uppercase;
   font-weight: 700; }
 
-.search-area .search-content .search-icon i, .why-choose-area .why-choose-single .why-choose-icon i {
+.search-area .search-content .search-icon i, .why-choose-area .why-choose-single .why-choose-icon i, .categorys-area .category-item span {
   background: -webkit-gradient(linear, left top, right top, from(#01a6fd), color-stop(51%, #17d0cf), to(#01a6fd));
   background: -webkit-linear-gradient(left, #01a6fd 0%, #17d0cf 51%, #01a6fd 100%);
   background: -o-linear-gradient(left, #01a6fd 0%, #17d0cf 51%, #01a6fd 100%);
@@ -1177,3 +1177,50 @@ body {
       color: #333333; }
 
 /*=============== FAQ Area End ===============*/
+/*=============== Categorys Area Start ===============*/
+.categorys-area {
+  background: #f7f7f7;
+  padding: 100px 0; }
+  .categorys-area .categorys-section h2 span {
+    font-weight: 700; }
+  .categorys-area .category-item {
+    margin-top: 50px;
+    padding: 35px;
+    background: #fff;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1; }
+    .categorys-area .category-item::after {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-size: 190%;
+      z-index: -1;
+      -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+      transform: scale(0);
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s;
+      opacity: 0;
+      visibility: hidden;
+      border-radius: 5px; }
+    .categorys-area .category-item span {
+      font-size: 60px; }
+    .categorys-area .category-item h4 {
+      font-size: 18px; }
+    .categorys-area .category-item:hover::after {
+      opacity: 1;
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+      visibility: visible; }
+    .categorys-area .category-item:hover span {
+      color: #fff; }
+    .categorys-area .category-item:hover h4 {
+      color: #fff; }
+
+/*=============== Categorys Area End ===============*/
