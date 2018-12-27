@@ -123,5 +123,8 @@ $(document).ready(function () {
             }
       });
 
+      // FAQ Tab Area 
+      $("#faq-tabs").tabs();
+
 });
 
