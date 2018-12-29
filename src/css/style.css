@@ -13,14 +13,14 @@ body {
   background: -o-linear-gradient(left, #01a6fd 0%, #17d0cf 51%, #01a6fd 100%);
   background: linear-gradient(to right, #01a6fd 0%, #17d0cf 51%, #01a6fd 100%); }
 
-.slider-area .single-slider .slider-content p, .search-area .search-title p, .popular-course-area .popular-section p, .about-area .about-right .about-section p, .why-choose-area .why-section p, .course-area .course-section p, .teachers-area .teachers-title p, .faq-area .faq-section p, .categorys-area .categorys-section p {
+.slider-area .single-slider .slider-content p, .search-area .search-title p, .popular-course-area .popular-section p, .about-area .about-right .about-section p, .why-choose-area .why-section p, .course-area .course-section p, .teachers-area .teachers-title p, .faq-area .faq-section p, .categorys-area .categorys-section p, .contact-area .contact-section p {
   color: #cccccc;
   letter-spacing: 7px;
   position: relative;
   margin: 0;
   display: inline-block; }
 
-.slider-area .single-slider .slider-content p::after, .search-area .search-title p::after, .popular-course-area .popular-section p::after, .about-area .about-right .about-section p:after, .why-choose-area .why-section p:after, .course-area .course-section p::after, .teachers-area .teachers-title p:after, .faq-area .faq-section p:after, .categorys-area .categorys-section p:after {
+.slider-area .single-slider .slider-content p::after, .search-area .search-title p::after, .popular-course-area .popular-section p::after, .about-area .about-right .about-section p:after, .why-choose-area .why-section p:after, .course-area .course-section p::after, .teachers-area .teachers-title p:after, .faq-area .faq-section p:after, .categorys-area .categorys-section p:after, .contact-area .contact-section p:after {
   position: absolute;
   content: '.';
   color: #17d0cf;
@@ -29,7 +29,7 @@ body {
   top: -11px;
   text-shadow: 15px 0 #17d0cf; }
 
-.slider-area .single-slider .slider-content p::before, .search-area .search-title p::before, .popular-course-area .popular-section p::before, .about-area .about-right .about-section p:before, .why-choose-area .why-section p:before, .course-area .course-section p:before, .teachers-area .teachers-title p:before, .faq-area .faq-section p:before, .categorys-area .categorys-section p:before {
+.slider-area .single-slider .slider-content p::before, .search-area .search-title p::before, .popular-course-area .popular-section p::before, .about-area .about-right .about-section p:before, .why-choose-area .why-section p:before, .course-area .course-section p:before, .teachers-area .teachers-title p:before, .faq-area .faq-section p:before, .categorys-area .categorys-section p:before, .contact-area .contact-section p:before {
   position: absolute;
   content: '.';
   color: #17d0cf;
@@ -39,7 +39,7 @@ body {
   left: -40px;
   text-shadow: 15px 0 #17d0cf; }
 
-.slider-area .single-slider .slider-content h2, .search-area .search-title h2, .popular-course-area .popular-section h2, .about-area .about-right .about-section h3, .why-choose-area .why-section h3, .testimonials-area .testimonials-section h3, .news-section h3, .events-area .event-section h3, .video-area .video-section h4, .brand-area .brand-section h4, .course-area .course-section h4, .teachers-area .teachers-title h2, .products-area .product-section h2, .faq-area .faq-section h2, .categorys-area .categorys-section h2 {
+.slider-area .single-slider .slider-content h2, .search-area .search-title h2, .popular-course-area .popular-section h2, .about-area .about-right .about-section h3, .why-choose-area .why-section h3, .testimonials-area .testimonials-section h3, .news-section h3, .events-area .event-section h3, .video-area .video-section h4, .brand-area .brand-section h4, .course-area .course-section h4, .teachers-area .teachers-title h2, .products-area .product-section h2, .faq-area .faq-section h2, .categorys-area .categorys-section h2, .contact-area .contact-section h2 {
   font-size: 55px;
   font-weight: 300; }
 
@@ -57,7 +57,7 @@ body {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%); }
 
-.search-area .search form a, .about-area .about-right .about-right-content .about-btn a, .teachers-area .teacher-btn a {
+.search-area .search form a, .about-area .about-right .about-right-content .about-btn a, .teachers-area .teacher-btn a, .contact-area .contact-text a {
   padding: 12px 30px;
   background: -webkit-gradient(linear, left top, right top, from(#01a6fd), color-stop(51%, #17d0cf), to(#01a6fd));
   background: -webkit-linear-gradient(left, #01a6fd 0%, #17d0cf 51%, #01a6fd 100%);
@@ -1224,3 +1224,52 @@ body {
       color: #fff; }
 
 /*=============== Categorys Area End ===============*/
+/*=============== Contact Area Start ===============*/
+.contact-area {
+  background: url("../img/banner/contact-b.jpg");
+  padding: 100px 0; }
+  .contact-area .contact-section p {
+    margin-left: 36px; }
+  .contact-area .contact-section h2 {
+    font-weight: 700;
+    color: #fff; }
+  .contact-area .contact-text {
+    color: #fff; }
+    .contact-area .contact-text p {
+      font-size: 18px;
+      line-height: 1.4;
+      padding-top: 20px;
+      padding-bottom: 25px; }
+    .contact-area .contact-text .contact-info .info-icon {
+      float: left;
+      margin-right: 20px;
+      width: 60px;
+      height: 60px;
+      border: 5px solid #17d0cf;
+      text-align: center;
+      border-radius: 50%;
+      line-height: 50px;
+      font-size: 30px; }
+    .contact-area .contact-text .contact-info ul {
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      padding-bottom: 10px;
+      padding-top: 4px; }
+      .contact-area .contact-text .contact-info ul li {
+        list-style: none;
+        font-weight: 300; }
+        .contact-area .contact-text .contact-info ul li b {
+          font-weight: 700; }
+    .contact-area .contact-text .contact-info hr {
+      background: #1e6696;
+      height: 2px; }
+    .contact-area .contact-text a {
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s;
+      margin-top: 85px; }
+      .contact-area .contact-text a:hover {
+        background-position: right center; }
+
+/*=============== Contact Area ENd ===============*/
