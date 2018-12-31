@@ -2,7 +2,8 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  color: #333333; }
+  color: #333333;
+  line-height: 1.4; }
 
 .mt-30 {
   margin-top: 30px; }
@@ -1273,3 +1274,16 @@ body {
         background-position: right center; }
 
 /*=============== Contact Area ENd ===============*/
+/*=============== Footer Area Start ===============*/
+footer .footer-top {
+  padding-top: 100px; }
+  footer .footer-top .footer-content p {
+    font-size: 17px;
+    padding-top: 35px;
+    margin-bottom: 35px; }
+  footer .footer-top .footer-content span {
+    font-size: 17px;
+    margin-bottom: 35px;
+    display: block; }
+
+/*=============== Footer Area End ===============*/
