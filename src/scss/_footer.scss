@@ -104,7 +104,7 @@ footer{
         }
     }
     .footer-middle{
-        margin-bottom: 65px;
+        
         .footer-social{
             h4{
                 @extend %title-h;
@@ -158,11 +158,38 @@ footer{
                     top: 0;
                     right: 0;
                     @extend %button;
-                    padding: 20px 30px;
+                    padding: 17px 30px;
                     border-top-left-radius: 0;
                     border-bottom-left-radius: 0;
                     &:hover{
                         color: #fff;
+                    }
+                }
+            }
+        }
+        .border{
+            border-bottom: 1px solid #eeeeee;
+            margin-top: 65px;
+        }
+    }
+    .footer-bottom{
+        padding: 45px 0;
+        .copyright{
+            span{
+                color: #cccccc;
+            }
+        }
+        .footer-menu{
+            ul{
+                margin: 0;
+                padding: 0;
+                li{
+                    list-style: none;
+                    display: inline-block;
+                    margin-left: 20px;
+                    a{
+                        color: #cccccc;
+                        text-decoration: none;
                     }
                 }
             }
