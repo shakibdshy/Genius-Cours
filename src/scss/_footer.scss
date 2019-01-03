@@ -103,5 +103,70 @@ footer{
             }
         }
     }
+    .footer-middle{
+        margin-bottom: 65px;
+        .footer-social{
+            h4{
+                @extend %title-h;
+                font-size: 25px;
+                font-weight: 700;
+            }
+            hr{
+                @extend %hr;
+            }
+            ul{
+                margin: 0;
+                padding: 0;
+                li{
+                    list-style: none;
+                    display: inline-block;
+                    border: 2px solid $theme-color;
+                    width: 30px;
+                    height: 30px;
+                    text-align: center;
+                    border-radius: 50%;
+                    margin-right: 3px;
+                    a{
+                        text-decoration: none;
+                        color: #666666;
+                    }   
+                }
+            }
+        }
+        .newsletter{
+            h4{
+                @extend %title-h;
+                font-size: 25px;
+                font-weight: 700;
+            }
+            hr{
+                @extend %hr;
+            }
+            form{
+                position: relative;
+                input{
+                    width: 100%;
+                    height: 60px;
+                    background: #f9f9f9;
+                    border-radius: 5px;
+                    border: none;
+                    padding: 20px;
+                    font-weight: 500;
+                }
+                a{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    @extend %button;
+                    padding: 20px 30px;
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
+                    &:hover{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
 }
 /*=============== Footer Area End ===============*/

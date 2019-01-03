@@ -40,7 +40,7 @@ body {
   left: -40px;
   text-shadow: 15px 0 #17d0cf; }
 
-.slider-area .single-slider .slider-content h2, .search-area .search-title h2, .popular-course-area .popular-section h2, .about-area .about-right .about-section h3, .why-choose-area .why-section h3, .testimonials-area .testimonials-section h3, .news-section h3, .events-area .event-section h3, .video-area .video-section h4, .brand-area .brand-section h4, .course-area .course-section h4, .teachers-area .teachers-title h2, .products-area .product-section h2, .faq-area .faq-section h2, .categorys-area .categorys-section h2, .contact-area .contact-section h2, footer .footer-top .footer-link h2, footer .footer-top .footer-gallery h4 {
+.slider-area .single-slider .slider-content h2, .search-area .search-title h2, .popular-course-area .popular-section h2, .about-area .about-right .about-section h3, .why-choose-area .why-section h3, .testimonials-area .testimonials-section h3, .news-section h3, .events-area .event-section h3, .video-area .video-section h4, .brand-area .brand-section h4, .course-area .course-section h4, .teachers-area .teachers-title h2, .products-area .product-section h2, .faq-area .faq-section h2, .categorys-area .categorys-section h2, .contact-area .contact-section h2, footer .footer-top .footer-link h2, footer .footer-top .footer-gallery h4, footer .footer-middle .footer-social h4, footer .footer-middle .newsletter h4 {
   font-size: 55px;
   font-weight: 300; }
 
@@ -58,7 +58,7 @@ body {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%); }
 
-.search-area .search form a, .about-area .about-right .about-right-content .about-btn a, .teachers-area .teacher-btn a, .contact-area .contact-text a {
+.search-area .search form a, .about-area .about-right .about-right-content .about-btn a, .teachers-area .teacher-btn a, .contact-area .contact-text a, footer .footer-middle .newsletter form a {
   padding: 12px 30px;
   background: -webkit-gradient(linear, left top, right top, from(#01a6fd), color-stop(51%, #17d0cf), to(#01a6fd));
   background: -webkit-linear-gradient(left, #01a6fd 0%, #17d0cf 51%, #01a6fd 100%);
@@ -77,7 +77,7 @@ body {
   background-clip: text;
   color: transparent; }
 
-.news-section hr, .events-area .event-section hr, .video-area .video-section hr, .brand-area .brand-section hr, .teachers-area .teachers-items .teacher-thum hr, .products-area .product-section hr, footer .footer-top .footer-link hr, footer .footer-top .footer-gallery hr {
+.news-section hr, .events-area .event-section hr, .video-area .video-section hr, .brand-area .brand-section hr, .teachers-area .teachers-items .teacher-thum hr, .products-area .product-section hr, footer .footer-top .footer-link hr, footer .footer-top .footer-gallery hr, footer .footer-middle .footer-social hr, footer .footer-middle .newsletter hr {
   width: 50px;
   height: 2px;
   background: #17d0cf;
@@ -1349,5 +1349,48 @@ footer .footer-top {
     footer .footer-top .footer-gallery .photo-items ul li:hover::after {
       opacity: 0.7;
       visibility: visible; }
+
+footer .footer-middle {
+  margin-bottom: 65px; }
+  footer .footer-middle .footer-social h4 {
+    font-size: 25px;
+    font-weight: 700; }
+  footer .footer-middle .footer-social ul {
+    margin: 0;
+    padding: 0; }
+    footer .footer-middle .footer-social ul li {
+      list-style: none;
+      display: inline-block;
+      border: 2px solid #17d0cf;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      border-radius: 50%;
+      margin-right: 3px; }
+      footer .footer-middle .footer-social ul li a {
+        text-decoration: none;
+        color: #666666; }
+  footer .footer-middle .newsletter h4 {
+    font-size: 25px;
+    font-weight: 700; }
+  footer .footer-middle .newsletter form {
+    position: relative; }
+    footer .footer-middle .newsletter form input {
+      width: 100%;
+      height: 60px;
+      background: #f9f9f9;
+      border-radius: 5px;
+      border: none;
+      padding: 20px;
+      font-weight: 500; }
+    footer .footer-middle .newsletter form a {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 20px 30px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0; }
+      footer .footer-middle .newsletter form a:hover {
+        color: #fff; }
 
 /*=============== Footer Area End ===============*/
