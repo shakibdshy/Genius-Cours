@@ -40,7 +40,7 @@ body {
   left: -40px;
   text-shadow: 15px 0 #17d0cf; }
 
-.slider-area .single-slider .slider-content h2, .search-area .search-title h2, .popular-course-area .popular-section h2, .about-area .about-right .about-section h3, .why-choose-area .why-section h3, .testimonials-area .testimonials-section h3, .news-section h3, .events-area .event-section h3, .video-area .video-section h4, .brand-area .brand-section h4, .course-area .course-section h4, .teachers-area .teachers-title h2, .products-area .product-section h2, .faq-area .faq-section h2, .categorys-area .categorys-section h2, .contact-area .contact-section h2 {
+.slider-area .single-slider .slider-content h2, .search-area .search-title h2, .popular-course-area .popular-section h2, .about-area .about-right .about-section h3, .why-choose-area .why-section h3, .testimonials-area .testimonials-section h3, .news-section h3, .events-area .event-section h3, .video-area .video-section h4, .brand-area .brand-section h4, .course-area .course-section h4, .teachers-area .teachers-title h2, .products-area .product-section h2, .faq-area .faq-section h2, .categorys-area .categorys-section h2, .contact-area .contact-section h2, footer .footer-top .footer-link h2 {
   font-size: 55px;
   font-weight: 300; }
 
@@ -77,7 +77,7 @@ body {
   background-clip: text;
   color: transparent; }
 
-.news-section hr, .events-area .event-section hr, .video-area .video-section hr, .brand-area .brand-section hr, .teachers-area .teachers-items .teacher-thum hr, .products-area .product-section hr {
+.news-section hr, .events-area .event-section hr, .video-area .video-section hr, .brand-area .brand-section hr, .teachers-area .teachers-items .teacher-thum hr, .products-area .product-section hr, footer .footer-top .footer-link hr {
   width: 50px;
   height: 2px;
   background: #17d0cf;
@@ -1285,5 +1285,26 @@ footer .footer-top {
     font-size: 17px;
     margin-bottom: 35px;
     display: block; }
+  footer .footer-top .footer-link h2 {
+    font-size: 25px;
+    font-weight: 700; }
+  footer .footer-top .footer-link .useful-link {
+    float: left;
+    margin-right: 70px; }
+  footer .footer-top .footer-link .account-info {
+    overflow: hidden; }
+  footer .footer-top ul {
+    margin: 0;
+    padding: 0; }
+    footer .footer-top ul li {
+      list-style: none; }
+      footer .footer-top ul li a {
+        color: #333333;
+        text-decoration: none;
+        padding-bottom: 5px;
+        display: block; }
+        footer .footer-top ul li a i {
+          color: #17d0cf;
+          margin-right: 5px; }
 
 /*=============== Footer Area End ===============*/
