@@ -15,7 +15,7 @@
     "query": "^0.2.0"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "5.5.0",
+    "@fortawesome/fontawesome-free": "5.7.2",
     "browser-sync": "2.26.3",
     "gulp": "3.9.1",
     "gulp-sass": "4.0.2"
