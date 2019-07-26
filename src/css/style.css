@@ -8,6 +8,7 @@ body {
 .mt-30 {
   margin-top: 30px; }
 
+/* Color */
 .header-area .menu-area nav ul li:hover, .popular-course-area .popular-init .popular-img span, .events-area .event-items .single-event .event-date .border-gradient, .video-area .video-img .video-icon, .course-area .course-wrapper .course-img .course-pricing span, .teachers-area .teachers-items .teacher-thum a, .products-area .single-product .product-content .product-cart:hover, .categorys-area .category-item::after {
   background: -webkit-gradient(linear, left top, right top, from(#01a6fd), color-stop(51%, #17d0cf), to(#01a6fd));
   background: -webkit-linear-gradient(left, #01a6fd 0%, #17d0cf 51%, #01a6fd 100%);
@@ -75,6 +76,8 @@ body {
   background: -o-linear-gradient(left, #01a6fd 0%, #17d0cf 51%, #01a6fd 100%);
   background: linear-gradient(to right, #01a6fd 0%, #17d0cf 51%, #01a6fd 100%);
   background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
   color: transparent; }
 
 .news-section hr, .events-area .event-section hr, .video-area .video-section hr, .brand-area .brand-section hr, .teachers-area .teachers-items .teacher-thum hr, .products-area .product-section hr, footer .footer-top .footer-link hr, footer .footer-top .footer-gallery hr, footer .footer-middle .footer-social hr, footer .footer-middle .newsletter hr {
@@ -97,6 +100,12 @@ body {
     float: left;
     padding-left: 35px;
     padding-top: 10px; }
+    @media only screen and (min-width: 992px) and (max-width: 1200px) {
+      .header-area .lang {
+        padding-left: 0; } }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .header-area .lang {
+        padding-left: 0; } }
   .header-area .menu-area {
     margin-top: 2px; }
     .header-area .menu-area nav ul {
@@ -112,6 +121,12 @@ body {
         padding: 7px 15px;
         border-radius: 5px;
         position: relative; }
+        @media only screen and (min-width: 992px) and (max-width: 1200px) {
+          .header-area .menu-area nav ul li {
+            padding: 7px 10px; } }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+          .header-area .menu-area nav ul li {
+            padding: 7px 5px; } }
         .header-area .menu-area nav ul li a {
           color: #fff;
           text-decoration: none;
@@ -196,6 +211,9 @@ body {
         border: 2px solid #17d0cf;
         border-radius: 50%;
         margin-right: 10px; }
+        @media only screen and (min-width: 992px) and (max-width: 1200px) {
+          .header-area .cart-search ul li {
+            margin-right: 0; } }
         .header-area .cart-search ul li a {
           color: #fff; }
 
@@ -1414,3 +1432,5 @@ footer .footer-bottom {
         text-decoration: none; }
 
 /*=============== Footer Area End ===============*/
+
+/*# sourceMappingURL=style.css.map */

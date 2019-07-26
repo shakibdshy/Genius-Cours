@@ -1,4 +1,6 @@
-$theme-color: #17d0cf;
+/* Color */
+$theme-color: #17d0cf; 
+
 %theme-gradient{
     background: linear-gradient(to right, #01a6fd 0%, #17d0cf 51%, #01a6fd 100%);
 }
@@ -67,6 +69,7 @@ $theme-color: #17d0cf;
     margin-bottom: 30px;
     margin-top: 18px;
 }
+// Color
 
 // Responsive Variables
 $laptop-lg: 'only screen and (min-width: 1330px) and (max-width: 1450px)';
