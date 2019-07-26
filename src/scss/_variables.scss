@@ -55,6 +55,8 @@ $theme-color: #17d0cf;
 %text-gradiant{
     background: linear-gradient(to right, #01a6fd 0%, #17d0cf 51%, #01a6fd 100%);
     background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
     color: transparent;
 }
 %hr{
@@ -65,3 +67,12 @@ $theme-color: #17d0cf;
     margin-bottom: 30px;
     margin-top: 18px;
 }
+
+// Responsive Variables
+$laptop-lg: 'only screen and (min-width: 1330px) and (max-width: 1450px)';
+$laptop: 'only screen and (min-width: 1200px) and (max-width: 1450px)';
+$lg : 'only screen and (min-width: 992px) and (max-width: 1200px)';
+$md:'only screen and (min-width: 768px) and (max-width: 991px)';
+$xs:'(max-width: 767px)';
+$sm: 'only screen and (min-width: 576px) and (max-width: 767px)';
+$mobile: '(max-width: 575px)';
