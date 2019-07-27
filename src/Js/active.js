@@ -1,5 +1,11 @@
 $(document).ready(function () {
 
+      // Mean Menu
+      $('#mobile-menu').meanmenu({
+            meanMenuContainer: '.mobile-menu',
+            meanScreenWidth: "767"
+      });
+
       // Slider Area
       $('.active-slider').owlCarousel({
             loop: true,
@@ -7,10 +13,16 @@ $(document).ready(function () {
             navText: ['<i class="fas fa-chevron-left"></i>','<i class="fas fa-chevron-right"></i>'],
             responsive: {
                   0: {
-                        items: 1
+                        items: 1,
+                        nav: false
                   },
                   600: {
-                        items: 1
+                        items: 1,
+                        nav: false
+                  },
+                  991: {
+                        items: 1,
+                        nav: false
                   },
                   1000: {
                         items: 1
